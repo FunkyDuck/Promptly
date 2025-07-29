@@ -13,7 +13,7 @@ class Bot {
             'token' => $_ENV['DISCORD_TOKEN'],
         ]);
 
-        echo "Promptly launched :: {$discord->username}";
+        echo "Promptly launched :: {$discord->user->username}";
 
         $discord->on('ready', function ($discord) {
             echo "Bot ready !\n";

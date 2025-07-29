@@ -8,6 +8,8 @@ class CommandHandler {
     public static function handle(Message $message): void {
         if($message->author->bot) return;
 
+        echo "Message reçu : '{$message->content}' de {$message->author->username}\n";
+
         $content = $message->content;
 
         if(!str_starts_with($content, '!')) return;
@@ -15,6 +17,8 @@ class CommandHandler {
         $args = explode(' ', ltrim($content, '!'));
         $command = ucfirst(strtolower($args[0]));
         $params = array_slice($args, 1);
+
+        echo "Commande détectée : {$command}\n";
 
         $className = "Promptly\\Commands\\{$command}Command";
 
