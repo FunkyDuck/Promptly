@@ -1,0 +1,34 @@
+### Composer ###
+/vendor/
+composer.phar
+
+### Environnement ###
+.env
+.env.local
+.env.*.local
+
+### Logs et caches ###
+*.log
+*.cache
+*.lock
+
+### Systèmes d’exploitation ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### IDE ###
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+### OS divers ###
+*.swp
+*.bak
+*.tmp
+
+### Déploiement (optionnel si t’en utilises) ###
+node_modules/
+build/
+dist/

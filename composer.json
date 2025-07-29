@@ -1,0 +1,12 @@
+{
+    "name": "funkyduck/promptly",
+    "autoload": {
+        "psr-4": {
+            "Promptly\\": "src/"
+        }
+    },
+    "require": {
+        "team-reflex/discord-php": "^10.18",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
