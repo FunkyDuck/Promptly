@@ -12,6 +12,8 @@ class CommandHandler {
 
         $content = $message->content;
 
+        $message->channel->sendMessage('Message reçu loud and clear !');
+
         if(empty($content)) {
             file_put_contents(__DIR__ . '/empty_messages.log', date('c') . " Message vide reçu de {$message->author->username}\n", FILE_APPEND);
             return;
