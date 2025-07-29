@@ -11,6 +11,7 @@ class Bot {
 
         $discord = new Discord([
             'token' => $_ENV['DISCORD_TOKEN'],
+            'intents' => \Discord\WebSockets\Intents::getDefaultIntents() | \Discord\WebSockets\Intents::MESSAGE_CONTENT,
         ]);
 
         echo "Promptly launched :: {$discord->user->username}";
