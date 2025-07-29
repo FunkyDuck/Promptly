@@ -12,6 +12,10 @@ class CommandHandler {
 
         $content = $message->content;
 
+        if(empty($content)) {
+            file_put_contents(__DIR__ . '/empty_messages.log', date('c') . " Message vide reçu de {$message->author->username}\n", FILE_APPEND);
+            return;
+        }
         if(!str_starts_with($content, '!')) return;
 
         $args = explode(' ', ltrim($content, '!'));
