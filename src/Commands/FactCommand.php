@@ -13,8 +13,7 @@ class FactCommand {
             return;
         }
 
-        $content = file_get_contents($file);
-        $facts = json_decode($content, true);
+        $facts = json_decode(file_get_contents($file), true);
 
         if(empty($facts)) {
             $message->channel->sendMessage("Le Fact-O-Tron est vide, veuillez attendre...");

@@ -13,8 +13,7 @@ class HelpCommand {
             return;
         }
 
-        $content = file_get_contents($file);
-        $data = json_decode($content, true);
+        $data = json_decode(file_get_contents($file), true);
 
         if(empty($data) || empty($data['help'])) {
             $message->channel->sendMessage("Hmmmm... Le fichier d'aide est vide...");

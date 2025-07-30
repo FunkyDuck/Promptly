@@ -13,8 +13,7 @@ class TipCommand {
             return;
         }
 
-        $content = file_get_contents($file);
-        $tips = json_decode($content, true);
+        $tips = json_decode(file_get_contents($file), true);
 
         if(empty($tips)) {
             $message->channel->sendMessage("Le Tip-O-matic attend d'être configuré...");

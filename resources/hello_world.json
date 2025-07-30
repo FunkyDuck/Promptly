@@ -1,0 +1,59 @@
+[
+    {
+        "lang": "php",
+        "code": "<?php\necho \"Hello, world!\";\n?>"
+    },
+    {
+        "lang": "python",
+        "code": "print(\"Hello, world!\")"
+    },
+    {
+        "lang": "javascript",
+        "code": "console.log(\"Hello, world!\");"
+    },
+    {
+        "lang": "bash",
+        "code": "echo \"Hello, world!\""
+    },
+    {
+        "lang": "c",
+        "code": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, world!\\n\");\n    return 0;\n}"
+    },
+    {
+        "lang": "sql",
+        "code": "SELECT 'Hello, world!';"
+    },
+    {
+        "lang": "csharp",
+        "code": "using System;\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, world!\");\n    }\n}"
+    },
+    {
+        "lang": "java",
+        "code": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, world!\");\n    }\n}"
+    },
+    {
+        "lang": "ruby",
+        "code": "puts \"Hello, world!\""
+    },
+    {
+        "lang": "lua",
+        "code": "print(\"Hello, world!\")"
+    },
+    {
+        "lang": "rust",
+        "code": "fn main() {\n    println!(\"Hello, world!\");\n}"
+    },
+    {
+        "lang": "postgresql",
+        "code": "DO $$\nBEGIN\n    RAISE NOTICE 'Hello, world!';\nEND\n$$;"
+    },
+    {
+        "lang": "assembly",
+        "code": "section .data\n    msg db 'Hello, world!',0Ah\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    mov ebx, 1\n    mov ecx, msg\n    mov edx, 13\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    int 0x80"
+    },
+    {
+        "lang": "brainfuck",
+        "code": "+[----->+++<]>+.---.+++++++..+++.------------.>++++++++++++.<[->+>+<<]>.>+.+++++++.."
+    }
+]   
+    

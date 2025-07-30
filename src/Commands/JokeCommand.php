@@ -13,11 +13,10 @@ class JokeCommand {
             return;
         }
 
-        $content = file_get_contents($file);
-        $jokes = json_decode($content, true);
+        $jokes = json_decode(file_get_contents($file), true);
 
         if(empty($jokes)) {
-            $message->channel->sendMessage("Le Joke-O-matic est vide, veuillez le remplir...");
+            $message->channel->sendMessage("Le Joke-O-matic 2000 est vide, veuillez le remplir...");
             return;
         }
 

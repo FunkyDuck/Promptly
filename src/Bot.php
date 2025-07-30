@@ -2,6 +2,8 @@
 
 namespace Promptly;
 
+use Promptly\Commands\QuestionCommand;
+
 use Discord\Discord;
 use Discord\WebSockets\Event;
 
@@ -20,6 +22,12 @@ class Bot {
             echo "Bot ready !\n";
 
             $discord->on(Event::MESSAGE_CREATE, function ($message) {
+                if($message->author->bot) return;
+
+                // Try to treat it like an answer for opened question
+                QuestionCommand::tryAnswer($message);
+
+                // And now to a classic command
                 CommandHandler::handle($message);
             });
         });
