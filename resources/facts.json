@@ -1,0 +1,62 @@
+[
+  {
+    "fact": "Le tout premier bug informatique documenté était un vrai papillon coincé dans un relais. C'était en 1947."
+  },
+  {
+    "fact": "Le mot 'byte' a été inventé pour éviter les fautes de frappe avec 'bit'."
+  },
+  {
+    "fact": "Le langage Python tire son nom de la série télé 'Monty Python's Flying Circus', pas du serpent."
+  },
+  {
+    "fact": "La touche 'Scroll Lock' existe encore sur nos claviers... et pourtant 99,9% des gens n'en connaissent pas l'usage."
+  },
+  {
+    "fact": "En 2013, un développeur a supprimé un paquet NPM nommé 'left-pad'. Il a cassé la moitié du web."
+  },
+  {
+    "fact": "Le logo de GitHub s’appelle Octocat. Oui, il a un nom."
+  },
+  {
+    "fact": "Une disquette 3,5 pouces ne faisait en réalité que 1,44 Mo. Ton CV 2025 tiendrait à peine dessus."
+  },
+  {
+    "fact": "Le point-virgule est obligatoire en PHP. En Python, il est maudit."
+  },
+  {
+    "fact": "Bill Gates a écrit son premier logiciel à 13 ans. C'était un jeu de morpion."
+  },
+  {
+    "fact": "Il existe une version de Doom jouable sur un test de grossesse numérique. Oui, vraiment."
+  },
+  {
+    "fact": "Windows 95 a été lancé avec une pub des Rolling Stones et un budget marketing de 300 millions de dollars."
+  },
+  {
+    "fact": "Les CAPTCHA permettent aussi à Google de numériser des livres anciens. Chaque test t’a rendu utile."
+  },
+  {
+    "fact": "Le logo original de Firefox représentait un panda rouge. Et non, ce n’est pas un renard."
+  },
+  {
+    "fact": "Tim Berners-Lee a inventé le Web... et a oublié de breveter l’idée."
+  },
+  {
+    "fact": "‘Hello, World!’ est apparu pour la première fois dans un livre sur le langage C en 1978."
+  },
+  {
+    "fact": "Linux tourne sur 100% des superordinateurs classés dans le TOP500."
+  },
+  {
+    "fact": "Le code binaire existe depuis le 17e siècle, inventé par le mathématicien Leibniz."
+  },
+  {
+    "fact": "La NASA utilise encore des disquettes dans certains systèmes de contrôle spatial. Parce que pourquoi pas."
+  },
+  {
+    "fact": "Dans Star Wars, les sons des sabres lasers viennent... d’un vieux projecteur de film et d’un micro grillé."
+  },
+  {
+    "fact": "Les développeurs passent plus de temps à chercher des bugs qu’à écrire du code. C’est documenté."
+  }
+]

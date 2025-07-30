@@ -1,0 +1,82 @@
+[
+  {
+    "tip": "Utilise 'git add -p' pour ajouter les changements par morceau, c’est top pour les commits propres.",
+    "context": "git"
+  },
+  {
+    "tip": "CTRL + R dans un terminal Bash permet de rechercher dans ton historique de commandes. Un gain de temps fou.",
+    "context": "terminal"
+  },
+  {
+    "tip": "En JavaScript, évite '==' au profit de '===' sauf cas très spécifiques. Moins de surprises, plus de rigueur.",
+    "context": "javascript"
+  },
+  {
+    "tip": "Nomme tes commits comme des actions : 'fix bug', 'add login', 'refactor styles'. Ça lit comme un journal.",
+    "context": "git"
+  },
+  {
+    "tip": "Prends l’habitude d’écrire des scripts de migration réversibles. Un rollback facile, c’est du stress en moins.",
+    "context": "backend"
+  },
+  {
+    "tip": "Fais tourner tes tests avant de push. Ça te sauve la réputation (et parfois le week-end).",
+    "context": "testing"
+  },
+  {
+    "tip": "Ton linter est ton ami. Configure-le bien une bonne fois, et tu seras tranquille ensuite.",
+    "context": "code_quality"
+  },
+  {
+    "tip": "Ne sous-estime jamais le pouvoir d’un bon README. Ton toi du futur te remerciera.",
+    "context": "documentation"
+  },
+  {
+    "tip": "Documente les raisons derrière tes choix, pas juste ce que fait le code.",
+    "context": "documentation"
+  },
+  {
+    "tip": "Divise un problème complexe en sous-problèmes plus simples, et attaque-les un par un.",
+    "context": "problem_solving"
+  },
+  {
+    "tip": "Automatise tout ce qui peut l’être. Ton futur toi te remerciera encore plus.",
+    "context": "automation"
+  },
+  {
+    "tip": "Prends des pauses régulières. Ton cerveau n’est pas une machine (même si tu codes comme si).",
+    "context": "productivity"
+  },
+  {
+    "tip": "Versionne aussi ta base de données et tes infra, pas que le code.",
+    "context": "devops"
+  },
+  {
+    "tip": "Ne commit jamais de secrets dans ton repo (API keys, passwords). Utilise des variables d’environnement.",
+    "context": "security"
+  },
+  {
+    "tip": "Apprends à lire les messages d’erreur, ce sont des alliés, pas des ennemis.",
+    "context": "debugging"
+  },
+  {
+    "tip": "Garde ton code simple. Si tu peux écrire un algo clair plutôt qu’un truc tordu, fais-le.",
+    "context": "code_quality"
+  },
+  {
+    "tip": "Teste d’abord la fonctionnalité, puis optimise. La prématurée optimisation est la racine de tous les maux.",
+    "context": "performance"
+  },
+  {
+    "tip": "Sache quand demander de l’aide, ce n’est pas une faiblesse mais un gain de temps.",
+    "context": "teamwork"
+  },
+  {
+    "tip": "Commenter c’est bien, mais un bon nom de variable, c’est encore mieux.",
+    "context": "code_quality"
+  },
+  {
+    "tip": "Intègre un système de logs efficace pour traquer les bugs en production.",
+    "context": "debugging"
+  }
+]
