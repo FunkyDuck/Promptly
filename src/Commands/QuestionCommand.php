@@ -61,6 +61,12 @@ class QuestionCommand {
     public static function checkAnswer(string $userAnswer, array $question) {
         $userAnswer = strtolower(trim($userAnswer));
 
+        // Sanity check
+        if (!isset($question['answers']) || !is_array($question['answers'])) {
+            error_log("[Promptly] Question mal formée (missing 'answers')");
+            return false;
+        }
+
         // Check if matching 100% on answer
         foreach ($question['answers'] as $answer) {
             if($userAnswer === strtolower(trim($answer))) return true;
