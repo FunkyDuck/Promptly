@@ -22,7 +22,7 @@ class JokeCommand {
         }
 
         // TODO :: Ajouter un filtrage par paramètre, pour type de blague
-        $randomJoke = array_rand($jokes);
-        $message->channel->sendMessage($randomJoke['joke']);
+        $randomKey = array_rand($jokes);
+        $message->channel->sendMessage($jokes[$randomKey]['joke']);
     }
 }
