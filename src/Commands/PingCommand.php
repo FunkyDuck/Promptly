@@ -2,7 +2,6 @@
 
 namespace Promptly\Commands;
 
-use Discord\WebSockets\Event;
 use Discord\Parts\Channel\Message;
 
 class PingCommand {
