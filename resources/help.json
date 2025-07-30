@@ -1,0 +1,24 @@
+{
+  "help": [
+    {
+      "command": "!ping",
+      "description": "Test rapide pour vérifier si le bot répond."
+    },
+    {
+      "command": "!joke",
+      "description": "Le bot te balance une blague aléatoire pour rigoler un peu."
+    },
+    {
+      "command": "!fact",
+      "description": "Envoie un fait tech intéressant et surprenant."
+    },
+    {
+      "command": "!tip",
+      "description": "Balance un conseil de dev utile pour améliorer ton code et ta prod."
+    },
+    {
+      "command": "!help",
+      "description": "Affiche cette liste de commandes pour te guider."
+    }
+  ]
+}
