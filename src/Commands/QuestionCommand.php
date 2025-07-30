@@ -43,7 +43,7 @@ class QuestionCommand {
         if(!isset(self::$activeQuestions[$userId])) return;
 
         $data = self::$activeQuestions[$userId];
-        $question = $data['question'];
+        $question = $data;
 
 
         // Kill the question (only one answer)
