@@ -23,7 +23,8 @@ class FactCommand {
 
         // TODO :: Ajouter un filtrage par paramètre
         $randomKey = array_rand($facts);
-        $response = "### Fact\n{$facts[$randomKey]['fact']}\n_Source: [{$facts[$randomKey]['name']}]({$facts[$randomKey]['source']})_";
+        $url = str_replace(['(', ')'], ['%28', '%29'], $facts[$randomKey]['source']);
+        $response = "### Fact\n{$facts[$randomKey]['fact']}\n_Source: [{$facts[$randomKey]['name']}]({$url})_";
         $message->channel->sendMessage($response);
     }
 }
