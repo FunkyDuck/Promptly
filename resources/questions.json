@@ -1,0 +1,127 @@
+[
+  {
+    "langage": "php",
+    "question": "Que va afficher le code suivant ?\n```php\n$a = 5;\n$b = '5';\nvar_dump($a == $b);\n```",
+    "answers": ["bool(true)", "true"],
+    "difficulty": "easy",
+    "explanation": "L'opérateur `==` en PHP effectue une comparaison avec conversion de type. Donc 5 (int) == '5' (string) => true.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "php",
+    "question": "Quel sera le résultat de ce code ?\n```php\n$foo = [1, 2, 3];\necho $foo[3] ?? 'empty';\n```",
+    "answers": ["empty"],
+    "difficulty": "medium",
+    "explanation": "L'opérateur null coalescent `??` renvoie 'empty' car l’index 3 n’existe pas dans le tableau.",
+    "context": "opérateurs"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que retourne ce code ?\n```js\ntypeof null\n```",
+    "answers": ["object"],
+    "difficulty": "medium",
+    "explanation": "C'est un bug historique de JS : `typeof null` retourne 'object'.",
+    "context": "types"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que va afficher ce code ?\n```js\nlet x = 1;\nconsole.log(x++);\n```",
+    "answers": ["1"],
+    "difficulty": "easy",
+    "explanation": "`x++` renvoie la valeur actuelle (1), puis incrémente à 2.",
+    "context": "incrémentation"
+  },
+  {
+    "langage": "python",
+    "question": "Quelle est la sortie de ce code ?\n```python\nprint(type([]))\n```",
+    "answers": ["<class 'list'>"],
+    "difficulty": "easy",
+    "explanation": "`[]` est une liste vide, donc `type([])` renvoie `<class 'list'>`.",
+    "context": "types"
+  },
+  {
+    "langage": "python",
+    "question": "Que renvoie la fonction `len()` dans ce cas ?\n```python\nlen({'a': 1, 'b': 2})\n```",
+    "answers": ["2"],
+    "difficulty": "easy",
+    "explanation": "Il y a 2 paires clé-valeur dans le dictionnaire, donc `len()` renvoie 2.",
+    "context": "collections"
+  },
+  {
+    "langage": "html",
+    "question": "Quel élément HTML est utilisé pour créer un bouton cliquable ?",
+    "answers": ["<button>", "button"],
+    "difficulty": "easy",
+    "explanation": "L’élément `<button>` est fait pour cela.",
+    "context": "éléments"
+  },
+  {
+    "langage": "html",
+    "question": "Que fait l'attribut `alt` dans une balise `<img>` ?",
+    "answers": ["Il fournit un texte alternatif", "Texte alternatif", "Affiche un texte si l'image ne se charge pas"],
+    "difficulty": "easy",
+    "explanation": "C'est utilisé pour l'accessibilité et en cas d'échec du chargement.",
+    "context": "accessibilité"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété CSS est utilisée pour changer la couleur du texte ?",
+    "answers": ["color"],
+    "difficulty": "easy",
+    "explanation": "La propriété `color` définit la couleur du texte.",
+    "context": "propriétés"
+  },
+  {
+    "langage": "css",
+    "question": "Que fait `display: flex;` en CSS ?",
+    "answers": ["Active le modèle flexbox", "Crée un conteneur flex"],
+    "difficulty": "medium",
+    "explanation": "Cela rend l’élément un conteneur flex, pour un meilleur alignement des enfants.",
+    "context": "mise en page"
+  },
+  {
+    "langage": "sql",
+    "question": "Quelle commande SQL permet de sélectionner toutes les colonnes d'une table `users` ?",
+    "answers": ["SELECT * FROM users;", "SELECT * FROM users"],
+    "difficulty": "easy",
+    "type": "text",
+    "explanation": "Le `*` signifie 'toutes les colonnes' dans une requête SELECT.",
+    "context": "select"
+  },
+  {
+    "langage": "sql",
+    "question": "Comment ajouter une colonne `age` de type entier dans une table `persons` ?",
+    "answers": ["ALTER TABLE persons ADD COLUMN age INT;", "ALTER TABLE persons ADD age INT;"],
+    "difficulty": "medium",
+    "type": "text",
+    "explanation": "La commande ALTER TABLE permet de modifier la structure d'une table.",
+    "context": "alter"
+  },
+  {
+    "langage": "sql",
+    "question": "Quelle clause SQL est utilisée pour filtrer les résultats d'une requête ?",
+    "answers": ["WHERE"],
+    "difficulty": "easy",
+    "type": "text",
+    "explanation": "La clause WHERE permet de filtrer les lignes retournées.",
+    "context": "where"
+  },
+  {
+    "langage": "sql",
+    "question": "Quel est le mot-clé pour trier les résultats d'une requête en ordre décroissant ?",
+    "answers": ["ORDER BY ... DESC"],
+    "difficulty": "easy",
+    "type": "text",
+    "explanation": "ORDER BY avec DESC trie les résultats du plus grand au plus petit.",
+    "context": "order by"
+  },
+  {
+    "langage": "sql",
+    "question": "Comment supprimer une table `temp_data` en SQL ?",
+    "answers": ["DROP TABLE temp_data;", "DROP TABLE temp_data"],
+    "difficulty": "medium",
+    "type": "text",
+    "explanation": "La commande DROP TABLE supprime définitivement une table et ses données.",
+    "context": "drop"
+  }
+]

@@ -73,5 +73,8 @@
     },
     {
         "joke": "Tu sais que tu es un développeur quand ça te gène pas d'avoir un String dans l'Array"
+    },
+    {
+        "joke": "```SQL\nSELECT odeur FROM age;```"
     }
 ]

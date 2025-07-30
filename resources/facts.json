@@ -1,62 +1,82 @@
 [
   {
-    "fact": "Le tout premier bug informatique documenté était un vrai papillon coincé dans un relais. C'était en 1947."
+    "fact": "Le tout premier bug informatique documenté était un vrai papillon coincé dans un relais. C'était en 1947.",
+    "source": "https://www.computerhistory.org/tdih/september/9/",
+    "name": "Computer History Museum"
   },
   {
-    "fact": "Le mot 'byte' a été inventé pour éviter les fautes de frappe avec 'bit'."
+    "fact": "Le mot 'byte' a été inventé pour éviter les fautes de frappe avec 'bit'.",
+    "source": "https://en.wikipedia.org/wiki/Byte",
+    "name": "Wikipedia"
   },
   {
-    "fact": "Le langage Python tire son nom de la série télé 'Monty Python's Flying Circus', pas du serpent."
+    "fact": "Le langage Python tire son nom de la série télé 'Monty Python's Flying Circus', pas du serpent.",
+    "source": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "name": "Wikipedia"
   },
   {
-    "fact": "La touche 'Scroll Lock' existe encore sur nos claviers... et pourtant 99,9% des gens n'en connaissent pas l'usage."
+    "fact": "La touche 'Scroll Lock' existe encore sur nos claviers... et pourtant 99,9% des gens n'en connaissent pas l'usage.",
+    "source": "https://en.wikipedia.org/wiki/Scroll_Lock",
+    "name": "Wikipedia"
   },
   {
-    "fact": "En 2013, un développeur a supprimé un paquet NPM nommé 'left-pad'. Il a cassé la moitié du web."
+    "fact": "En 2013, un développeur a supprimé un paquet NPM nommé 'left-pad'. Il a cassé la moitié du web.",
+    "source": "https://en.wikipedia.org/wiki/Npm_left-pad_incident",
+    "name": "Wikipedia"
   },
   {
-    "fact": "Le logo de GitHub s’appelle Octocat. Oui, il a un nom."
+    "fact": "Le logo de GitHub s’appelle Octocat. Oui, il a un nom.",
+    "source": "https://en.wikipedia.org/wiki/Octocat",
+    "name": "Wikipedia"
   },
   {
-    "fact": "Une disquette 3,5 pouces ne faisait en réalité que 1,44 Mo. Ton CV 2025 tiendrait à peine dessus."
+    "fact": "Une disquette 3,5 pouces ne faisait en réalité que 1,44 Mo. Ton CV 2025 tiendrait à peine dessus.",
+    "source": "https://en.wikipedia.org/wiki/Floppy_disk#3%C2%BD-inch_floppy_disk",
+    "name": "Wikipedia"
   },
   {
-    "fact": "Le point-virgule est obligatoire en PHP. En Python, il est maudit."
+    "fact": "Le point-virgule est obligatoire en PHP. En Python, il est maudit.",
+    "source": "https://www.php.net/manual/fr/language.basic-syntax.instruction-separation.php",
+    "name": "PHP.net"
   },
   {
-    "fact": "Bill Gates a écrit son premier logiciel à 13 ans. C'était un jeu de morpion."
+    "fact": "Bill Gates a écrit son premier logiciel à 13 ans. C'était un jeu de morpion.",
+    "source": "https://en.wikipedia.org/wiki/Bill_Gates#Early_life",
+    "name": "Wikipedia"
   },
   {
-    "fact": "Il existe une version de Doom jouable sur un test de grossesse numérique. Oui, vraiment."
+    "fact": "Il existe une version de Doom jouable sur un test de grossesse numérique. Oui, vraiment.",
+    "source": "https://www.pcgamer.com/doom-pregnancy-test/",
+    "name": "PC Gamer"
   },
   {
-    "fact": "Windows 95 a été lancé avec une pub des Rolling Stones et un budget marketing de 300 millions de dollars."
+    "fact": "Windows 95 a été lancé avec une pub des Rolling Stones et un budget marketing de 300 millions de dollars.",
+    "source": "https://www.cnet.com/tech/computing/windows-95-turns-25-the-os-that-changed-everything/",
+    "name": "CNET"
   },
   {
-    "fact": "Les CAPTCHA permettent aussi à Google de numériser des livres anciens. Chaque test t’a rendu utile."
+    "fact": "Les CAPTCHA permettent aussi à Google de numériser des livres anciens. Chaque test t’a rendu utile.",
+    "source": "https://en.wikipedia.org/wiki/ReCAPTCHA",
+    "name": "Wikipedia"
   },
   {
-    "fact": "Le logo original de Firefox représentait un panda roux. Et non, ce n’est pas un renard."
+    "fact": "Le logo original de Firefox représentait un panda roux. Et non, ce n’est pas un renard.",
+    "source": "https://blog.mozilla.org/en/mozilla/firefox-logo-history/",
+    "name": "Mozilla Blog"
   },
   {
-    "fact": "Tim Berners-Lee a inventé le Web... et a oublié de breveter l’idée."
+    "fact": "Tim Berners‑Lee a inventé le Web... et a oublié de breveter l’idée.",
+    "source": "https://time.com/3575159/tim-berners-lee-2/",
+    "name": "Time"
   },
   {
-    "fact": "‘Hello, World!’ est apparu pour la première fois dans un livre sur le langage C en 1978."
+    "fact": "‘Hello, World!’ est apparu pour la première fois dans un livre sur le langage C en 1978.",
+    "source": "https://en.wikipedia.org/wiki/%22Hello,_World!%22_program",
+    "name": "Wikipedia"
   },
   {
-    "fact": "Linux tourne sur 100% des superordinateurs classés dans le TOP500."
-  },
-  {
-    "fact": "Le code binaire existe depuis le 17e siècle, inventé par le mathématicien Leibniz."
-  },
-  {
-    "fact": "La NASA utilise encore des disquettes dans certains systèmes de contrôle spatial. Parce que pourquoi pas."
-  },
-  {
-    "fact": "Dans Star Wars, les sons des sabres lasers viennent... d’un vieux projecteur de film et d’un micro grillé."
-  },
-  {
-    "fact": "Les développeurs passent plus de temps à chercher des bugs qu’à écrire du code. C’est documenté."
+    "fact": "Linux tourne sur 100 % des superordinateurs listés dans le TOP500.",
+    "source": "https://www.top500.org/statistics/list/",
+    "name": "TOP500"
   }
 ]
