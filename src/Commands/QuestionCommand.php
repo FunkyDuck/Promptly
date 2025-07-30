@@ -6,6 +6,7 @@ use Discord\Parts\Channel\Message;
 
 class QuestionCommand {
     protected static array $activeQuestions = [];
+    protected const TIMEOUT = 300;
 
     public function execute(Message $message, array $params) {
         $userId = $message->author->id;
@@ -31,7 +32,7 @@ class QuestionCommand {
         $question = $questions[array_rand($questions)];
 
         // register question for user
-        self::$activeQuestions[$userId] = $question;
+        self::$activeQuestions[$userId] = ["question" => $question, "timestamp" => time()];
 
         $message->channel->sendMessage("## J'ai une question **'{$question['langage']}'** pour toi :\n**{$question['question']}**\n_Réponds directement dans ce canal._");
     }
@@ -43,12 +44,16 @@ class QuestionCommand {
         if(!isset(self::$activeQuestions[$userId])) return;
 
         $data = self::$activeQuestions[$userId];
-        $question = $data;
+        $question = $data['question'];
 
-
+        
         // Kill the question (only one answer)
         unset(self::$activeQuestions[$userId]);
-
+        
+        if(time() - $data['timestamp'] > self::TIMEOUT) {
+            $message->channel->sendMessage("⌛ Tu as oublié que tu avais une question en cours? Ton temps est écoulé <@{$userId}>...");
+            return;
+        }
         // Check answer
         if(self::checkAnswer($content, $question)) {
             $message->channel->sendMessage("👌 Bravo <@{$userId}> ! Bonne réponse 🎉\n{$question['explanation']}");
