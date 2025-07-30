@@ -54,7 +54,7 @@ class QuestionCommand {
             $message->channel->sendMessage("👌 Bravo <@{$userId}> ! Bonne réponse 🎉\n{$question['explanation']}");
         }
         else {
-            $message->channel->sendMessage("👎 Je connais un <@{$userId}> qui va faire planter son code 😆\nLa bonne réponse était : " . implode(' / ', $question['answer']) . "\n_Explication : {$question['explanation']}_");
+            $message->channel->sendMessage("👎 Je connais un <@{$userId}> qui va faire planter son code 😆\nLa bonne réponse était : " . implode(' / ', $question['answers']) . "\n_Explication : {$question['explanation']}_");
         }
     }
 
