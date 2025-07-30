@@ -33,7 +33,7 @@ class QuestionCommand {
         // register question for user
         self::$activeQuestions[$userId] = $question;
 
-        $message->channel->sendMessage("## J'ai une question pour toi :\n**{$question['question']}**\n_Réponds directement dans ce canal._");
+        $message->channel->sendMessage("## J'ai une question **'{$question['langage']}'** pour toi :\n**{$question['question']}**\n_Réponds directement dans ce canal._");
     }
 
     public static function tryAnswer(Message $message): void {
