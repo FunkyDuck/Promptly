@@ -20,7 +20,7 @@ class CommandHandler {
 
         $args = explode(' ', ltrim($content, '!'));
         $extractedCommand = strtolower($args[0]);
-        $command = ucfirst(str_replace('-', '', $extractedCommand));
+        $command = self::kebabToPascalCase($extractedCommand);
         $params = array_slice($args, 1);
 
         echo "Commande détectée : {$command}\n";
@@ -33,5 +33,9 @@ class CommandHandler {
         else {
             $message->channel->sendMessage("??? Commande inconnue :: `!{$command}`");
         }
+    }
+
+    public static function kebabToPascalCase(string $input): string {
+        return implode('', array_map('ucfirst', explode('-', $input)));
     }
 }
