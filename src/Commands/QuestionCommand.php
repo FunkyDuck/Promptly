@@ -32,7 +32,12 @@ class QuestionCommand {
         $question = $questions[array_rand($questions)];
 
         // register question for user
-        self::$activeQuestions[$userId] = ["question" => $question, "timestamp" => time()];
+        self::$activeQuestions[$userId] = [
+            "question" => $question, 
+            "timestamp" => time(),
+            "server" => $message->guild_id,
+            "channel" => $message->channel_id
+        ];
 
         $message->channel->sendMessage("## J'ai une question **'{$question['langage']}'** pour toi :\n**{$question['question']}**\n_Réponds directement dans ce canal._");
     }
@@ -41,7 +46,11 @@ class QuestionCommand {
         $userId = $message->author->id;
         $content = trim($message->content);
 
-        if(!isset(self::$activeQuestions[$userId])) return;
+        if(
+            !isset(self::$activeQuestions[$userId]) || 
+            self::$activeQuestions[$userId]['server'] != $message->guild_id || 
+            self::$activeQuestions[$userId]['channel'] != $message->channel_id
+        ) return;
 
         $data = self::$activeQuestions[$userId];
         $question = $data['question'];
