@@ -1,0 +1,262 @@
+[
+    {
+    "langage": "python",
+    "question": "Quelle est la sortie de ce code ?\n```python\nprint(type([]))\n```",
+    "answers": ["<class 'list'>"],
+    "accepted_phrases": [
+      "type list",
+      "une liste",
+      "<class 'list'>"
+    ],
+    "difficulty": "easy",
+    "explanation": "`[]` est une liste vide, donc `type([])` renvoie `<class 'list'>`.",
+    "context": "types"
+  },
+  {
+    "langage": "python",
+    "question": "Que renvoie la fonction `len()` dans ce cas ?\n```python\nlen({'a': 1, 'b': 2})\n```",
+    "answers": ["2"],
+    "accepted_phrases": [
+      "2",
+      "le nombre 2",
+      "la longueur est 2"
+    ],
+    "difficulty": "easy",
+    "explanation": "Il y a 2 paires clé-valeur dans le dictionnaire, donc `len()` renvoie 2.",
+    "context": "collections"
+  },
+  {
+    "langage": "python",
+    "question": "Que fait la méthode `append()` sur une liste ?",
+    "answers": ["Ajoute un élément à la fin de la liste"],
+    "accepted_phrases": [
+      "ajoute un élément",
+      "append ajoute à la fin",
+      "ajout dans la liste"
+    ],
+    "difficulty": "easy",
+    "explanation": "`append()` ajoute un élément à la fin de la liste existante.",
+    "context": "listes"
+  },
+  {
+    "langage": "python",
+    "question": "Quelle est la sortie de ce code ?\n```python\nprint('Hello' * 3)\n```",
+    "answers": ["HelloHelloHello"],
+    "accepted_phrases": [
+      "HelloHelloHello",
+      "trois fois Hello",
+      "répète Hello trois fois"
+    ],
+    "difficulty": "easy",
+    "explanation": "En Python, multiplier une chaîne par un entier répète la chaîne ce nombre de fois.",
+    "context": "chaînes"
+  },
+  {
+    "langage": "python",
+    "question": "Que fait la fonction `range(5)` ?",
+    "answers": ["Un itérable de 0 à 4"],
+    "accepted_phrases": [
+      "itérable de 0 à 4",
+      "nombres de 0 à 4",
+      "range crée une séquence de 5 nombres"
+    ],
+    "difficulty": "easy",
+    "explanation": "`range(5)` génère une séquence d'entiers de 0 inclus à 5 exclu.",
+    "context": "itérables"
+  },
+  {
+    "langage": "python",
+    "question": "Que renvoie `dict.keys()` ?",
+    "answers": ["Une vue des clés du dictionnaire"],
+    "accepted_phrases": [
+      "les clés du dictionnaire",
+      "vue des clés",
+      "clés dict"
+    ],
+    "difficulty": "medium",
+    "explanation": "`dict.keys()` retourne un objet 'view' qui montre toutes les clés du dictionnaire.",
+    "context": "dictionnaires"
+  },
+  {
+    "langage": "python",
+    "question": "Comment vérifier si un élément `x` est dans une liste `lst` ?",
+    "answers": ["`x in lst` retourne True ou False"],
+    "accepted_phrases": [
+      "x in lst",
+      "vérifier avec in",
+      "test d'appartenance"
+    ],
+    "difficulty": "easy",
+    "explanation": "L'opérateur `in` teste la présence d'un élément dans une séquence et renvoie un booléen.",
+    "context": "opérateurs"
+  },
+  {
+    "langage": "python",
+    "question": "Quelle est la sortie de ce code ?\n```python\nprint(bool(''))\n```",
+    "answers": ["False"],
+    "accepted_phrases": [
+      "false",
+      "bool de chaîne vide est False",
+      "valeur False"
+    ],
+    "difficulty": "easy",
+    "explanation": "Une chaîne vide est évaluée à False en contexte booléen.",
+    "context": "types"
+  },
+  {
+    "langage": "python",
+    "question": "Que fait la méthode `split()` sur une chaîne ?",
+    "answers": ["Divise la chaîne en liste selon un séparateur"],
+    "accepted_phrases": [
+      "split divise la chaîne",
+      "sépare en liste",
+      "transforme en liste"
+    ],
+    "difficulty": "medium",
+    "explanation": "`split()` découpe une chaîne en morceaux en utilisant un séparateur (par défaut espace) et retourne une liste.",
+    "context": "chaînes"
+  },
+  {
+    "langage": "python",
+    "question": "Que retourne `sorted([3,1,2])` ?",
+    "answers": ["[1, 2, 3]"],
+    "accepted_phrases": [
+      "liste triée",
+      "[1, 2, 3]",
+      "sorted retourne une liste ordonnée"
+    ],
+    "difficulty": "easy",
+    "explanation": "`sorted()` renvoie une nouvelle liste triée sans modifier la liste d’origine.",
+    "context": "listes"
+  },
+  {
+    "langage": "python",
+    "question": "Qu’est-ce qu’un décorateur en Python ?",
+    "answers": ["Une fonction qui modifie le comportement d’une autre fonction"],
+    "accepted_phrases": [
+      "fonction qui modifie une fonction",
+      "modifie comportement d'une fonction",
+      "decorator modifie une fonction"
+    ],
+    "difficulty": "hard",
+    "explanation": "Un décorateur prend une fonction en entrée, lui ajoute un comportement, et retourne une nouvelle fonction.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "python",
+    "question": "Que fait le mot-clé `yield` dans une fonction ?",
+    "answers": ["Produit un générateur, renvoie une valeur sans terminer la fonction"],
+    "accepted_phrases": [
+      "yield produit un générateur",
+      "renvoie une valeur temporaire",
+      "fonction pause avec yield"
+    ],
+    "difficulty": "hard",
+    "explanation": "`yield` permet de créer des générateurs qui produisent des valeurs à la demande, suspendant l’exécution de la fonction.",
+    "context": "générateurs"
+  },
+  {
+    "langage": "python",
+    "question": "Quelle est la différence entre une liste et un tuple ?",
+    "answers": ["Une liste est mutable, un tuple est immuable"],
+    "accepted_phrases": [
+      "liste mutable",
+      "tuple immuable",
+      "différence mutabilité"
+    ],
+    "difficulty": "medium",
+    "explanation": "Les listes peuvent être modifiées après création, les tuples non.",
+    "context": "collections"
+  },
+  {
+    "langage": "python",
+    "question": "Que fait la fonction `map()` ?",
+    "answers": ["Applique une fonction à tous les éléments d’un itérable et renvoie un itérateur"],
+    "accepted_phrases": [
+      "map applique une fonction",
+      "transformation itérable",
+      "fonction map"
+    ],
+    "difficulty": "medium",
+    "explanation": "`map()` applique une fonction à chaque élément d’une séquence et retourne un itérateur des résultats.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "python",
+    "question": "Comment gérer une exception spécifique en Python ?",
+    "answers": ["Avec un bloc try/except en ciblant l’exception"],
+    "accepted_phrases": [
+      "try except",
+      "gestion exception",
+      "capter une exception"
+    ],
+    "difficulty": "easy",
+    "explanation": "Le bloc `try/except` permet d’attraper et gérer une exception donnée.",
+    "context": "exceptions"
+  },
+  {
+    "langage": "python",
+    "question": "Que fait `__init__` dans une classe Python ?",
+    "answers": ["Le constructeur qui initialise l’objet"],
+    "accepted_phrases": [
+      "constructeur",
+      "initialise l’objet",
+      "méthode init"
+    ],
+    "difficulty": "easy",
+    "explanation": "`__init__` est appelé lors de la création d’une instance, pour initialiser ses attributs.",
+    "context": "classes"
+  },
+  {
+    "langage": "python",
+    "question": "Quelle est la sortie de ce code ?\n```python\nprint([i for i in range(3)])\n```",
+    "answers": ["[0, 1, 2]"],
+    "accepted_phrases": [
+      "liste [0, 1, 2]",
+      "comprehension list",
+      "retourne [0, 1, 2]"
+    ],
+    "difficulty": "medium",
+    "explanation": "La compréhension de liste crée une nouvelle liste avec les valeurs générées dans la boucle.",
+    "context": "listes"
+  },
+  {
+    "langage": "python",
+    "question": "Comment déclarer une fonction anonyme en Python ?",
+    "answers": ["Avec le mot-clé `lambda`"],
+    "accepted_phrases": [
+      "lambda",
+      "fonction anonyme lambda",
+      "fonction sans nom"
+    ],
+    "difficulty": "medium",
+    "explanation": "Les fonctions anonymes sont déclarées avec `lambda` et peuvent être utilisées inline.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "python",
+    "question": "Que fait la fonction `zip()` ?",
+    "answers": ["Associe les éléments de plusieurs itérables en tuples"],
+    "accepted_phrases": [
+      "zip associe des listes",
+      "regroupe en tuples",
+      "fonction zip"
+    ],
+    "difficulty": "medium",
+    "explanation": "`zip()` crée un itérateur de tuples où chaque tuple contient un élément de chaque itérable passé.",
+    "context": "itérables"
+  },
+  {
+    "langage": "python",
+    "question": "Comment convertir une chaîne en entier en Python ?",
+    "answers": ["Avec la fonction `int()`"],
+    "accepted_phrases": [
+      "int()",
+      "conversion en entier",
+      "caster en int"
+    ],
+    "difficulty": "easy",
+    "explanation": "La fonction `int()` convertit une chaîne ou un nombre flottant en entier.",
+    "context": "types"
+  }
+]

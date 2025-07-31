@@ -1,0 +1,263 @@
+[
+    {
+    "langage": "css",
+    "question": "Quelle propriété CSS est utilisée pour changer la couleur du texte ?",
+    "answers": ["color"],
+    "accepted_phrases": [
+      "la propriété color",
+      "color",
+      "utiliser color"
+    ],
+    "difficulty": "easy",
+    "explanation": "La propriété `color` définit la couleur du texte.",
+    "context": "propriétés"
+  },
+  {
+    "langage": "css",
+    "question": "Que fait `display: flex;` en CSS ?",
+    "answers": ["Crée un conteneur flex"],
+    "accepted_phrases": [
+      "active le modèle flexbox",
+      "crée un conteneur flex",
+      "rend l'élément flex",
+      "applique le modèle flex"
+    ],
+    "difficulty": "medium",
+    "explanation": "Cela rend l’élément un conteneur flex, pour un meilleur alignement des enfants.",
+    "context": "mise en page"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété CSS permet de changer la taille du texte ?",
+    "answers": ["font-size"],
+    "accepted_phrases": [
+      "font-size",
+      "changer la taille du texte avec font-size",
+      "la propriété font-size"
+    ],
+    "difficulty": "easy",
+    "explanation": "`font-size` permet de définir la taille des caractères affichés.",
+    "context": "propriétés"
+  },
+  {
+    "langage": "css",
+    "question": "Comment définir une marge externe en CSS ?",
+    "answers": ["margin"],
+    "accepted_phrases": [
+      "margin",
+      "utiliser margin",
+      "ajouter une marge avec margin"
+    ],
+    "difficulty": "easy",
+    "explanation": "`margin` crée un espace à l'extérieur d’un élément.",
+    "context": "espacement"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété CSS permet de centrer un élément horizontalement avec `margin` ?",
+    "answers": ["margin: auto"],
+    "accepted_phrases": [
+      "margin auto",
+      "utiliser margin: auto",
+      "centrer avec margin auto"
+    ],
+    "difficulty": "medium",
+    "explanation": "Avec une largeur définie, `margin: auto` permet de centrer un élément horizontalement.",
+    "context": "centrage"
+  },
+  {
+    "langage": "css",
+    "question": "Comment définir la couleur de fond d’un élément en CSS ?",
+    "answers": ["background-color"],
+    "accepted_phrases": [
+      "changer la couleur de fond avec background-color",
+      "background-color",
+      "appliquer une couleur de fond"
+    ],
+    "difficulty": "easy",
+    "explanation": "La propriété `background-color` modifie la couleur de fond d’un élément.",
+    "context": "styles"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété CSS est utilisée pour mettre du texte en gras ?",
+    "answers": ["font-weight"],
+    "accepted_phrases": [
+      "font-weight",
+      "mettre du texte en gras",
+      "utiliser font-weight"
+    ],
+    "difficulty": "easy",
+    "explanation": "`font-weight` permet de définir l'épaisseur des caractères.",
+    "context": "typo"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle unité CSS relative à la taille du texte parent est souvent utilisée ?",
+    "answers": ["em"],
+    "accepted_phrases": [
+      "em",
+      "utiliser l'unité em",
+      "taille relative avec em"
+    ],
+    "difficulty": "medium",
+    "explanation": "`em` est une unité relative basée sur la taille de police de l’élément parent.",
+    "context": "unités"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété CSS permet de cacher un élément sans le supprimer du DOM ?",
+    "answers": ["display: none"],
+    "accepted_phrases": [
+      "display none",
+      "masquer un élément avec display none",
+      "utiliser display none"
+    ],
+    "difficulty": "medium",
+    "explanation": "`display: none` masque complètement l’élément, sans l'effacer du DOM.",
+    "context": "visibilité"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété contrôle la superposition des éléments en CSS ?",
+    "answers": ["z-index"],
+    "accepted_phrases": [
+      "z-index",
+      "contrôler la profondeur avec z-index",
+      "utiliser z-index"
+    ],
+    "difficulty": "medium",
+    "explanation": "`z-index` permet de définir l’ordre d’empilement des éléments positionnés.",
+    "context": "positionnement"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété CSS permet de souligner un texte ?",
+    "answers": ["text-decoration"],
+    "accepted_phrases": [
+      "text-decoration",
+      "souligner avec text-decoration",
+      "utiliser text-decoration"
+    ],
+    "difficulty": "easy",
+    "explanation": "`text-decoration` contrôle la décoration du texte comme les soulignements.",
+    "context": "typo"
+  },
+  {
+    "langage": "css",
+    "question": "Que fait la propriété `position: absolute;` ?",
+    "answers": ["Positionne l'élément relativement au parent positionné le plus proche"],
+    "accepted_phrases": [
+      "positionne l'élément par rapport à son parent positionné",
+      "absolu par rapport au parent positionné",
+      "utilise la position absolue"
+    ],
+    "difficulty": "medium",
+    "explanation": "`position: absolute` permet de positionner l'élément par rapport à son ancêtre le plus proche qui a une position définie.",
+    "context": "positionnement"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété permet de rendre un élément semi-transparent ?",
+    "answers": ["opacity"],
+    "accepted_phrases": [
+      "opacity",
+      "utiliser opacity",
+      "changer l’opacité avec opacity"
+    ],
+    "difficulty": "easy",
+    "explanation": "`opacity` définit le niveau de transparence d’un élément, entre 0 et 1.",
+    "context": "apparence"
+  },
+  {
+    "langage": "css",
+    "question": "Comment sélectionner un élément au survol en CSS ?",
+    "answers": [":hover"],
+    "accepted_phrases": [
+      ":hover",
+      "pseudo-classe hover",
+      "au survol avec :hover"
+    ],
+    "difficulty": "medium",
+    "explanation": "`:hover` est une pseudo-classe qui s’applique quand l’utilisateur survole un élément.",
+    "context": "sélecteurs"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété CSS permet d’ajouter une ombre à un bloc ?",
+    "answers": ["box-shadow"],
+    "accepted_phrases": [
+      "box-shadow",
+      "utiliser box-shadow",
+      "ajouter une ombre avec box-shadow"
+    ],
+    "difficulty": "medium",
+    "explanation": "`box-shadow` ajoute une ombre portée à un élément.",
+    "context": "apparence"
+  },
+  {
+    "langage": "css",
+    "question": "Que fait la propriété `overflow: hidden;` ?",
+    "answers": ["Cache le contenu débordant"],
+    "accepted_phrases": [
+      "cache le débordement",
+      "overflow hidden cache le contenu dépassant",
+      "masque le débordement"
+    ],
+    "difficulty": "medium",
+    "explanation": "`overflow: hidden` empêche l’affichage du contenu qui dépasse la boîte de l’élément.",
+    "context": "mise en page"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété permet de transformer un texte en majuscules ?",
+    "answers": ["text-transform"],
+    "accepted_phrases": [
+      "text-transform",
+      "mettre en majuscule avec text-transform",
+      "changer la casse du texte"
+    ],
+    "difficulty": "easy",
+    "explanation": "`text-transform` permet de modifier la casse du texte (majuscules, minuscules, etc.).",
+    "context": "typo"
+  },
+  {
+    "langage": "css",
+    "question": "Comment appliquer un style différent à l’élément `p` uniquement s’il est le premier enfant ?",
+    "answers": ["p:first-child"],
+    "accepted_phrases": [
+      "p:first-child",
+      "sélecteur first-child sur p",
+      "utiliser p:first-child"
+    ],
+    "difficulty": "medium",
+    "explanation": "`:first-child` cible le premier enfant d’un parent. `p:first-child` ne fonctionne que si le `p` est vraiment le premier enfant.",
+    "context": "sélecteurs"
+  },
+  {
+    "langage": "css",
+    "question": "Quelle propriété permet de faire une transition animée entre deux états ?",
+    "answers": ["transition"],
+    "accepted_phrases": [
+      "transition",
+      "utiliser transition",
+      "animation avec transition"
+    ],
+    "difficulty": "medium",
+    "explanation": "`transition` permet d’animer en douceur le changement d’une ou plusieurs propriétés CSS.",
+    "context": "animations"
+  },
+  {
+    "langage": "css",
+    "question": "Comment appliquer un style à tous les éléments d'une page ?",
+    "answers": ["*"],
+    "accepted_phrases": [
+      "*",
+      "le sélecteur universel *",
+      "utiliser le sélecteur étoile"
+    ],
+    "difficulty": "easy",
+    "explanation": "Le sélecteur universel `*` cible tous les éléments HTML.",
+    "context": "sélecteurs"
+  }
+]

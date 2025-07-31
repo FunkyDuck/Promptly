@@ -1,0 +1,272 @@
+[
+    {
+    "langage": "javascript",
+    "question": "Que retourne ce code ?\n```js\ntypeof null\n```",
+    "answers": ["object"],
+    "accepted_phrases": [
+      "le type object",
+      "'object'",
+      "ça retourne object"
+    ],
+    "difficulty": "medium",
+    "explanation": "C'est un bug historique de JS : `typeof null` retourne 'object'.",
+    "context": "types"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que va afficher ce code ?\n```js\nlet x = 1;\nconsole.log(x++);\n```",
+    "answers": ["1"],
+    "accepted_phrases": [
+      "1",
+      "la valeur 1"
+    ],
+    "difficulty": "easy",
+    "explanation": "`x++` renvoie la valeur actuelle (1), puis incrémente à 2.",
+    "context": "incrémentation"
+  },
+  {
+    "langage": "javascript",
+    "question": "Quelle est la différence entre `==` et `===` en JavaScript ?",
+    "answers": ["`===` compare aussi le type", "`==` compare sans le type"],
+    "accepted_phrases": [
+      "=== compare aussi le type",
+      "== compare sans vérifier le type",
+      "triple égal compare type et valeur",
+      "double égal compare uniquement valeur"
+    ],
+    "difficulty": "medium",
+    "explanation": "`==` effectue une conversion de type avant comparaison, `===` compare type et valeur sans conversion.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que retourne ce code ?\n```js\nconsole.log(typeof undefined);\n```",
+    "answers": ["undefined"],
+    "accepted_phrases": [
+      "undefined",
+      "le type undefined",
+      "ça retourne undefined"
+    ],
+    "difficulty": "easy",
+    "explanation": "`typeof undefined` retourne la chaîne \"undefined\".",
+    "context": "types"
+  },
+  {
+    "langage": "javascript",
+    "question": "Quelle méthode permet d'ajouter un élément à la fin d'un tableau ?",
+    "answers": ["push"],
+    "accepted_phrases": [
+      "push",
+      "méthode push",
+      "ajouter avec push"
+    ],
+    "difficulty": "easy",
+    "explanation": "La méthode `push` ajoute un ou plusieurs éléments à la fin d’un tableau.",
+    "context": "tableaux"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que fait `Array.isArray([])` ?",
+    "answers": ["true"],
+    "accepted_phrases": [
+      "true",
+      "retourne true",
+      "indique que c'est un tableau"
+    ],
+    "difficulty": "easy",
+    "explanation": "`Array.isArray()` vérifie si la valeur est un tableau et retourne true ou false.",
+    "context": "tableaux"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que va afficher ce code ?\n```js\nconsole.log(0 == false);\n```",
+    "answers": ["true"],
+    "accepted_phrases": [
+      "true",
+      "cela retourne true",
+      "0 est égal à false avec ==",
+      "égalité vraie"
+    ],
+    "difficulty": "medium",
+    "explanation": "`0 == false` est vrai car `==` effectue une conversion de type.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "javascript",
+    "question": "Comment créer une fonction fléchée (arrow function) qui retourne la valeur x + 1 ?",
+    "answers": ["x => x + 1"],
+    "accepted_phrases": [
+      "x => x + 1",
+      "fonction fléchée x => x + 1",
+      "() => x + 1 si pas de paramètre"
+    ],
+    "difficulty": "medium",
+    "explanation": "Les fonctions fléchées s’écrivent avec `=>`. Ici, une fonction simple qui ajoute 1 à x.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "javascript",
+    "question": "Quel mot-clé permet de déclarer une variable avec portée limitée au bloc ?",
+    "answers": ["let"],
+    "accepted_phrases": [
+      "let",
+      "déclaration avec let",
+      "portée bloc avec let"
+    ],
+    "difficulty": "medium",
+    "explanation": "`let` déclare une variable dont la portée est limitée au bloc dans lequel elle est définie.",
+    "context": "variables"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que fait la méthode `map()` sur un tableau ?",
+    "answers": ["Crée un nouveau tableau en transformant chaque élément"],
+    "accepted_phrases": [
+      "crée un nouveau tableau",
+      "transforme chaque élément",
+      "map transforme le tableau"
+    ],
+    "difficulty": "medium",
+    "explanation": "`map()` applique une fonction à chaque élément d’un tableau et retourne un nouveau tableau avec les résultats.",
+    "context": "tableaux"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que fait une closure en JavaScript ?",
+    "answers": ["Une fonction qui retient son environnement lexical"],
+    "accepted_phrases": [
+      "fonction qui retient son environnement",
+      "fonction avec accès aux variables externes",
+      "closure capture le scope"
+    ],
+    "difficulty": "hard",
+    "explanation": "Une closure est une fonction qui garde accès aux variables de son contexte même après la fin de celui-ci.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "javascript",
+    "question": "Comment créer une promesse en JavaScript ?",
+    "answers": ["new Promise((resolve, reject) => {...})"],
+    "accepted_phrases": [
+      "new Promise",
+      "création de promesse avec new Promise",
+      "Promise avec resolve et reject"
+    ],
+    "difficulty": "medium",
+    "explanation": "On crée une promesse avec le constructeur `Promise` prenant deux fonctions, resolve et reject.",
+    "context": "promesses"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que fait `async` devant une fonction ?",
+    "answers": ["Indique que la fonction retourne une promesse"],
+    "accepted_phrases": [
+      "fonction async retourne une promesse",
+      "async transforme une fonction en promesse",
+      "fonction asynchrone"
+    ],
+    "difficulty": "medium",
+    "explanation": "Une fonction `async` retourne implicitement une promesse et peut utiliser `await`.",
+    "context": "async"
+  },
+  {
+    "langage": "javascript",
+    "question": "À quoi sert le mot-clé `await` ?",
+    "answers": ["Attend la résolution d'une promesse"],
+    "accepted_phrases": [
+      "await attend une promesse",
+      "pause l'exécution jusqu'à la résolution",
+      "utilisé dans async pour attendre"
+    ],
+    "difficulty": "medium",
+    "explanation": "`await` pause l'exécution dans une fonction async jusqu’à la résolution de la promesse.",
+    "context": "async"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que fait la méthode `bind()` ?",
+    "answers": ["Fixe le contexte `this` d'une fonction"],
+    "accepted_phrases": [
+      "bind fixe le this",
+      "changer le contexte this",
+      "lier une fonction à un contexte"
+    ],
+    "difficulty": "medium",
+    "explanation": "`bind()` crée une nouvelle fonction avec `this` lié à l’objet passé en argument.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "javascript",
+    "question": "Quelle différence entre `var`, `let` et `const` ?",
+    "answers": [
+      "`var` a une portée fonction, `let` et `const` ont une portée bloc",
+      "`const` est une constante, `let` est variable",
+      "`var` est hoisté, `let` et `const` non"
+    ],
+    "accepted_phrases": [
+      "var portée fonction",
+      "let et const portée bloc",
+      "const est une constante",
+      "var hoisting"
+    ],
+    "difficulty": "medium",
+    "explanation": "`var` est fonction-scoped et hoisté, `let` et `const` sont block-scoped, `const` ne peut pas être réassigné.",
+    "context": "variables"
+  },
+  {
+    "langage": "javascript",
+    "question": "Qu'est-ce qu'une fonction auto-invoquée (IIFE) ?",
+    "answers": ["Fonction qui s'exécute immédiatement après sa déclaration"],
+    "accepted_phrases": [
+      "fonction auto-invoquée",
+      "fonction immédiatement appelée",
+      "IIFE s'exécute tout de suite"
+    ],
+    "difficulty": "medium",
+    "explanation": "Une IIFE est une fonction qui s'exécute immédiatement après avoir été définie, souvent utilisée pour éviter la pollution du scope global.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "javascript",
+    "question": "Comment créer un objet littéral avec une propriété et une méthode ?",
+    "answers": ["{ prop: valeur, method() { ... } }"],
+    "accepted_phrases": [
+      "objet avec propriété et méthode",
+      "littéral avec method()",
+      "définir méthode dans objet"
+    ],
+    "difficulty": "easy",
+    "explanation": "On peut définir un objet avec une propriété et une méthode directement dans une notation littérale.",
+    "context": "objets"
+  },
+  {
+    "langage": "javascript",
+    "question": "Que fait la méthode `filter()` sur un tableau ?",
+    "answers": ["Crée un nouveau tableau avec les éléments qui passent un test"],
+    "accepted_phrases": [
+      "filter crée un tableau filtré",
+      "filtre les éléments",
+      "retourne un tableau selon condition"
+    ],
+    "difficulty": "medium",
+    "explanation": "`filter()` applique une fonction test à chaque élément et retourne un tableau des éléments pour lesquels le test est vrai.",
+    "context": "tableaux"
+  },
+  {
+    "langage": "javascript",
+    "question": "Quelle est la différence entre `null` et `undefined` en JavaScript ?",
+    "answers": [
+      "`null` est une valeur assignée, `undefined` signifie absence de valeur",
+      "`undefined` signifie variable non définie",
+      "`null` est un objet, `undefined` est un type"
+    ],
+    "accepted_phrases": [
+      "null est assigné",
+      "undefined non défini",
+      "null et undefined sont différents"
+    ],
+    "difficulty": "medium",
+    "explanation": "`null` est une valeur volontairement assignée pour indiquer 'absence de valeur', alors que `undefined` signifie que la variable n'a pas été initialisée.",
+    "context": "types"
+  }
+]

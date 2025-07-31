@@ -1,0 +1,270 @@
+[
+    {
+    "langage": "html",
+    "question": "Quel élément HTML est utilisé pour créer un bouton cliquable ?",
+    "answers": ["<button>", "button"],
+    "accepted_phrases": [
+      "la balise button",
+      "<button>",
+      "utiliser <button>"
+    ],
+    "difficulty": "easy",
+    "explanation": "L’élément `<button>` est fait pour cela.",
+    "context": "éléments"
+  },
+  {
+    "langage": "html",
+    "question": "Que fait l'attribut `alt` dans une balise `<img>` ?",
+    "answers": ["Texte alternatif"],
+    "accepted_phrases": [
+      "il fournit un texte alternatif",
+      "texte affiché quand l'image ne charge pas",
+      "c'est pour l'accessibilité",
+      "description alternative"
+    ],
+    "difficulty": "easy",
+    "explanation": "C'est utilisé pour l'accessibilité et en cas d'échec du chargement.",
+    "context": "accessibilité"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise HTML contient le contenu visible d'une page web ?",
+    "answers": ["<body>", "body"],
+    "accepted_phrases": [
+      "la balise body",
+      "<body>",
+      "le corps de la page"
+    ],
+    "difficulty": "easy",
+    "explanation": "`<body>` regroupe tout ce qui est visible à l'écran : texte, images, boutons, etc.",
+    "context": "structure"
+  },
+  {
+    "langage": "html",
+    "question": "Quel élément HTML est utilisé pour insérer un lien hypertexte ?",
+    "answers": ["<a>", "a"],
+    "accepted_phrases": [
+      "la balise a",
+      "balise de lien",
+      "<a>",
+      "utiliser a"
+    ],
+    "difficulty": "easy",
+    "explanation": "`<a>` (anchor) permet de créer des liens vers d'autres pages ou ressources.",
+    "context": "liens"
+  },
+  {
+    "langage": "html",
+    "question": "Quel attribut HTML est utilisé pour ouvrir un lien dans un nouvel onglet ?",
+    "answers": ["target=\"_blank\""],
+    "accepted_phrases": [
+      "target _blank",
+      "target=\"_blank\"",
+      "ouvrir dans un nouvel onglet"
+    ],
+    "difficulty": "medium",
+    "explanation": "L’attribut `target=\"_blank\"` ouvre le lien dans un nouvel onglet du navigateur.",
+    "context": "liens"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise HTML est utilisée pour regrouper logiquement des champs dans un formulaire ?",
+    "answers": ["<fieldset>", "fieldset"],
+    "accepted_phrases": [
+      "fieldset",
+      "la balise fieldset",
+      "groupe de champs"
+    ],
+    "difficulty": "medium",
+    "explanation": "`<fieldset>` permet de regrouper plusieurs champs liés dans un formulaire.",
+    "context": "formulaires"
+  },
+  {
+    "langage": "html",
+    "question": "À quoi sert la balise `<label>` dans un formulaire HTML ?",
+    "answers": ["Associer un texte descriptif à un champ de formulaire"],
+    "accepted_phrases": [
+      "décrire un champ de formulaire",
+      "associer du texte à un champ",
+      "balise pour champ",
+      "label pour formulaire"
+    ],
+    "difficulty": "easy",
+    "explanation": "`<label>` améliore l’accessibilité en liant un texte à un champ (`input`, `textarea`, etc.).",
+    "context": "formulaires"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise HTML est utilisée pour inclure une vidéo sur une page web ?",
+    "answers": ["<video>", "video"],
+    "accepted_phrases": [
+      "balise video",
+      "<video>",
+      "utiliser video",
+      "pour afficher une vidéo"
+    ],
+    "difficulty": "easy",
+    "explanation": "La balise `<video>` permet d’intégrer une vidéo HTML5 dans une page web.",
+    "context": "médias"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise permet de spécifier un titre de niveau 1 dans HTML ?",
+    "answers": ["<h1>", "h1"],
+    "accepted_phrases": [
+      "<h1>",
+      "balise h1",
+      "titre principal",
+      "titre niveau 1"
+    ],
+    "difficulty": "easy",
+    "explanation": "`<h1>` représente le titre principal d’une page, important pour la hiérarchie du contenu et le SEO.",
+    "context": "titres"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise sémantique représente un contenu indépendant, comme un article de blog ?",
+    "answers": ["<article>", "article"],
+    "accepted_phrases": [
+      "article",
+      "balise article",
+      "<article>",
+      "contenu indépendant"
+    ],
+    "difficulty": "medium",
+    "explanation": "La balise `<article>` représente un bloc de contenu autonome et réutilisable, comme un post ou une news.",
+    "context": "sémantique"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise HTML permet de structurer la navigation principale d’un site ?",
+    "answers": ["<nav>", "nav"],
+    "accepted_phrases": [
+      "balise nav",
+      "navigation",
+      "balise pour le menu principal"
+    ],
+    "difficulty": "medium",
+    "explanation": "`<nav>` est une balise sémantique utilisée pour grouper les liens de navigation principaux.",
+    "context": "sémantique"
+  },
+  {
+    "langage": "html",
+    "question": "Quel attribut ARIA peut indiquer qu’un élément est caché aux lecteurs d’écran ?",
+    "answers": ["aria-hidden=\"true\""],
+    "accepted_phrases": [
+      "aria-hidden true",
+      "aria hidden",
+      "aria-hidden=\"true\"",
+      "cacher aux lecteurs d’écran"
+    ],
+    "difficulty": "hard",
+    "explanation": "`aria-hidden=\"true\"` rend un élément invisible aux technologies d’assistance.",
+    "context": "accessibilité"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise HTML est utilisée pour inclure du son sur une page web ?",
+    "answers": ["<audio>", "audio"],
+    "accepted_phrases": [
+      "balise audio",
+      "<audio>",
+      "intégrer un son"
+    ],
+    "difficulty": "easy",
+    "explanation": "La balise `<audio>` permet d’inclure un fichier sonore HTML5 dans la page.",
+    "context": "médias"
+  },
+  {
+    "langage": "html",
+    "question": "Quel attribut HTML est utilisé pour rendre un champ de formulaire obligatoire ?",
+    "answers": ["required"],
+    "accepted_phrases": [
+      "required",
+      "le champ est requis",
+      "obligatoire"
+    ],
+    "difficulty": "easy",
+    "explanation": "L’attribut `required` empêche la soumission du formulaire si le champ est vide.",
+    "context": "formulaires"
+  },
+  {
+    "langage": "html",
+    "question": "Que fait l’attribut `placeholder` dans un champ de formulaire ?",
+    "answers": ["Il affiche un texte indicatif à l’intérieur du champ"],
+    "accepted_phrases": [
+      "texte indicatif",
+      "texte d’exemple",
+      "placeholder",
+      "affiche un indice"
+    ],
+    "difficulty": "easy",
+    "explanation": "`placeholder` montre un texte grisé tant que l’utilisateur n’a pas saisi de valeur.",
+    "context": "formulaires"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise HTML5 permet de définir une zone de contenu réutilisable sans l’afficher immédiatement ?",
+    "answers": ["<template>", "template"],
+    "accepted_phrases": [
+      "<template>",
+      "balise template",
+      "contenu réutilisable"
+    ],
+    "difficulty": "hard",
+    "explanation": "`<template>` contient du code HTML qui ne sera pas rendu, mais peut être utilisé dynamiquement via JavaScript.",
+    "context": "html5"
+  },
+  {
+    "langage": "html",
+    "question": "Quel attribut HTML influence le référencement (SEO) d’une image ?",
+    "answers": ["alt"],
+    "accepted_phrases": [
+      "alt",
+      "l’attribut alt",
+      "description d’image pour SEO"
+    ],
+    "difficulty": "medium",
+    "explanation": "L’attribut `alt` améliore l’accessibilité et aide les moteurs de recherche à comprendre l’image.",
+    "context": "seo"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle balise HTML sert à inclure un script JavaScript externe ?",
+    "answers": ["<script src=\"...\">", "<script>"],
+    "accepted_phrases": [
+      "<script>",
+      "balise script",
+      "inclure un script"
+    ],
+    "difficulty": "medium",
+    "explanation": "La balise `<script>` permet d’exécuter ou d’inclure du code JavaScript dans une page HTML.",
+    "context": "scripts"
+  },
+  {
+    "langage": "html",
+    "question": "Quel attribut permet de spécifier le type MIME du contenu dans une balise `<script>` ou `<style>` ?",
+    "answers": ["type"],
+    "accepted_phrases": [
+      "type",
+      "attribut type",
+      "type du contenu"
+    ],
+    "difficulty": "medium",
+    "explanation": "L’attribut `type` permet de définir le type de contenu, comme `text/javascript` ou `text/css`.",
+    "context": "attributs"
+  },
+  {
+    "langage": "html",
+    "question": "Quelle est la différence entre `<strong>` et `<b>` en HTML ?",
+    "answers": ["`<strong>` a une signification sémantique, `<b>` est purement visuel"],
+    "accepted_phrases": [
+      "strong est sémantique",
+      "b est juste visuel",
+      "balises similaires mais pas sémantiques"
+    ],
+    "difficulty": "hard",
+    "explanation": "`<strong>` indique une importance, alors que `<b>` n’a pas de sens sémantique, juste du style.",
+    "context": "sémantique"
+  }
+]

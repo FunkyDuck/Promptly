@@ -1,0 +1,284 @@
+[
+    {
+        "langage": "sql",
+        "question": "Quelle commande SQL permet de sélectionner toutes les colonnes d'une table `users` ?",
+        "answers": ["SELECT * FROM users;"],
+        "accepted_phrases": [
+            "select étoile from users",
+            "select * from users",
+            "sélectionne tout dans users"
+        ],
+        "difficulty": "easy",
+        "type": "text",
+        "explanation": "Le `*` signifie 'toutes les colonnes' dans une requête SELECT.",
+        "context": "select"
+    },
+    {
+        "langage": "sql",
+        "question": "Comment ajouter une colonne `age` de type entier dans une table `persons` ?",
+        "answers": ["ALTER TABLE persons ADD COLUMN age INT;"],
+        "accepted_phrases": [
+            "alter table persons add column age int",
+            "ajouter la colonne age dans persons",
+            "modifier la table persons pour ajouter age"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "La commande ALTER TABLE permet de modifier la structure d'une table.",
+        "context": "alter"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle clause SQL est utilisée pour filtrer les résultats d'une requête ?",
+        "answers": ["WHERE"],
+        "accepted_phrases": [
+            "la clause where",
+            "where",
+            "filtrer avec where"
+        ],
+        "difficulty": "easy",
+        "type": "text",
+        "explanation": "La clause WHERE permet de filtrer les lignes retournées.",
+        "context": "where"
+    },
+    {
+        "langage": "sql",
+        "question": "Quel est le mot-clé pour trier les résultats d'une requête en ordre décroissant ?",
+        "answers": ["ORDER BY ... DESC"],
+        "accepted_phrases": [
+            "order by desc",
+            "tri décroissant",
+            "utiliser desc"
+        ],
+        "difficulty": "easy",
+        "type": "text",
+        "explanation": "ORDER BY avec DESC trie les résultats du plus grand au plus petit.",
+        "context": "order by"
+    },
+    {
+        "langage": "sql",
+        "question": "Comment supprimer une table `temp_data` en SQL ?",
+        "answers": ["DROP TABLE temp_data;"],
+        "accepted_phrases": [
+            "drop table temp_data",
+            "supprimer la table temp_data",
+            "commande drop pour temp_data"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "La commande DROP TABLE supprime définitivement une table et ses données.",
+        "context": "drop"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle commande SQL permet de renommer une table `clients` en `customers` ?",
+        "answers": ["ALTER TABLE clients RENAME TO customers;"],
+        "accepted_phrases": [
+            "renommer la table clients en customers",
+            "alter table clients rename to customers",
+            "changer le nom de la table clients"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "La commande ALTER TABLE avec RENAME TO permet de changer le nom d'une table existante.",
+        "context": "rename"
+    },
+    {
+        "langage": "sql",
+        "question": "Comment récupérer uniquement les lignes avec des valeurs distinctes dans une colonne `email` ?",
+        "answers": ["SELECT DISTINCT email FROM table_name;"],
+        "accepted_phrases": [
+            "select distinct email",
+            "valeurs uniques de email",
+            "récupérer les emails différents"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "DISTINCT permet d’éliminer les doublons dans les résultats d'une requête.",
+        "context": "distinct"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle fonction SQL permet de calculer la moyenne d'une colonne `price` ?",
+        "answers": ["AVG(price)"],
+        "accepted_phrases": [
+            "moyenne de price",
+            "avg price",
+            "utiliser avg pour price"
+        ],
+        "difficulty": "easy",
+        "type": "text",
+        "explanation": "AVG est une fonction d’agrégation qui calcule la moyenne des valeurs numériques.",
+        "context": "avg"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle clause SQL permet de regrouper les résultats par une colonne ?",
+        "answers": ["GROUP BY"],
+        "accepted_phrases": [
+            "group by",
+            "regrouper par colonne",
+            "grouper les résultats"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "GROUP BY est utilisé pour agréger les résultats selon une ou plusieurs colonnes.",
+        "context": "group by"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle clause permet de limiter le nombre de résultats retournés par une requête ?",
+        "answers": ["LIMIT"],
+        "accepted_phrases": [
+            "limit",
+            "limiter le nombre de résultats",
+            "clause limit"
+        ],
+        "difficulty": "easy",
+        "type": "text",
+        "explanation": "LIMIT restreint le nombre de lignes retournées, souvent utilisé pour paginer les résultats.",
+        "context": "limit"
+    },
+    {
+        "langage": "sql",
+        "question": "Comment insérer une nouvelle ligne dans la table `products` avec les colonnes `name` et `price` ?",
+        "answers": ["INSERT INTO products (name, price) VALUES ('nom', 10);"],
+        "accepted_phrases": [
+            "insert into products",
+            "ajouter un produit avec name et price",
+            "insertion dans la table products"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "La commande INSERT INTO permet d’ajouter une nouvelle ligne avec les valeurs spécifiées.",
+        "context": "insert"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle commande permet de supprimer toutes les lignes d'une table `logs` sans supprimer la table elle-même ?",
+        "answers": ["DELETE FROM logs;"],
+        "accepted_phrases": [
+            "supprimer les lignes de logs",
+            "delete from logs",
+            "vider la table logs"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "DELETE FROM sans WHERE supprime toutes les lignes mais conserve la structure de la table.",
+        "context": "delete"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle commande met à jour la colonne `status` à 'active' dans la table `users` pour les utilisateurs avec `score > 100` ?",
+        "answers": ["UPDATE users SET status = 'active' WHERE score > 100;"],
+        "accepted_phrases": [
+            "update users set status",
+            "mettre à jour status à active si score > 100",
+            "changer le status selon le score"
+        ],
+        "difficulty": "hard",
+        "type": "text",
+        "explanation": "UPDATE permet de modifier des lignes existantes, souvent combiné avec une clause WHERE.",
+        "context": "update"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle clause permet de combiner plusieurs conditions dans une requête SQL ?",
+        "answers": ["AND", "OR"],
+        "accepted_phrases": [
+            "and ou or",
+            "conditions multiples",
+            "utiliser and et or"
+        ],
+        "difficulty": "easy",
+        "type": "text",
+        "explanation": "Les opérateurs AND et OR permettent de combiner plusieurs conditions dans une clause WHERE.",
+        "context": "and or"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle commande SQL crée une nouvelle table nommée `employees` avec les colonnes `id` et `name` ?",
+        "answers": ["CREATE TABLE employees (id INT, name TEXT);"],
+        "accepted_phrases": [
+            "create table employees",
+            "créer une table employees avec id et name",
+            "nouvelle table employees"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "CREATE TABLE définit la structure d'une nouvelle table avec ses colonnes et types.",
+        "context": "create"
+    },
+    {
+        "langage": "sql",
+        "question": "Comment compter le nombre total de lignes dans une table `orders` ?",
+        "answers": ["SELECT COUNT(*) FROM orders;"],
+        "accepted_phrases": [
+            "compter les lignes de orders",
+            "count * from orders",
+            "nombre total dans orders"
+        ],
+        "difficulty": "easy",
+        "type": "text",
+        "explanation": "COUNT(*) retourne le nombre total de lignes d'une table.",
+        "context": "count"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle clause SQL est utilisée pour filtrer les résultats d'une agrégation ?",
+        "answers": ["HAVING"],
+        "accepted_phrases": [
+            "clause having",
+            "filtrer un groupement",
+            "having après group by"
+        ],
+        "difficulty": "hard",
+        "type": "text",
+        "explanation": "HAVING filtre les groupes après une clause GROUP BY, contrairement à WHERE qui filtre les lignes.",
+        "context": "having"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle commande donne le schéma d'une table existante en SQL ?",
+        "answers": ["DESCRIBE table_name;", "SHOW COLUMNS FROM table_name;"],
+        "accepted_phrases": [
+            "describe la table",
+            "voir les colonnes",
+            "structure de la table"
+        ],
+        "difficulty": "easy",
+        "type": "text",
+        "explanation": "DESCRIBE (ou SHOW COLUMNS) permet d'afficher la structure d'une table.",
+        "context": "describe"
+    },
+    {
+        "langage": "sql",
+        "question": "Comment sélectionner les utilisateurs dont le prénom commence par 'A' ?",
+        "answers": ["SELECT * FROM users WHERE firstname LIKE 'A%';"],
+        "accepted_phrases": [
+            "utiliser like a%",
+            "prénoms commençant par A",
+            "where firstname like"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "LIKE permet de faire des recherches par motif, ici avec 'A%' pour les prénoms commençant par A.",
+        "context": "like"
+    },
+    {
+        "langage": "sql",
+        "question": "Quelle commande permet de supprimer les doublons sur une sélection de colonne `email` ?",
+        "answers": ["SELECT DISTINCT email FROM table_name;"],
+        "accepted_phrases": [
+            "distinct sur email",
+            "supprimer doublons email",
+            "email unique avec distinct"
+        ],
+        "difficulty": "medium",
+        "type": "text",
+        "explanation": "DISTINCT permet de ne retourner que les lignes uniques selon les colonnes sélectionnées.",
+        "context": "distinct"
+    }
+]
+
+           

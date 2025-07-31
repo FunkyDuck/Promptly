@@ -1,0 +1,226 @@
+[
+  {
+    "langage": "csharp",
+    "question": "Comment déclare-t-on une variable entière en C# ?",
+    "answers": ["int x;"],
+    "accepted_phrases": [
+      "int x",
+      "déclaration int",
+      "variable entière"
+    ],
+    "difficulty": "easy",
+    "explanation": "En C#, `int` est le type entier, on déclare une variable avec `int x;`.",
+    "context": "variables"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quel mot-clé permet d’hériter d’une classe en C# ?",
+    "answers": ["`:`"],
+    "accepted_phrases": [
+      "les deux points",
+      "heritage avec :",
+      "class A : B"
+    ],
+    "difficulty": "medium",
+    "explanation": "En C#, l’héritage se fait avec les deux points `:` après le nom de la classe.",
+    "context": "héritage"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quelle est la sortie de ce code ?\n```csharp\nConsole.WriteLine(5 + 3 * 2);\n```",
+    "answers": ["11"],
+    "accepted_phrases": [
+      "11",
+      "le résultat est 11",
+      "affiche 11"
+    ],
+    "difficulty": "easy",
+    "explanation": "En C#, comme en maths, la multiplication est prioritaire : 3*2=6, puis 5+6=11.",
+    "context": "arithmétique"
+  },
+  {
+    "langage": "csharp",
+    "question": "Comment déclare-t-on une méthode qui ne retourne rien ?",
+    "answers": ["`void maMéthode() { }`"],
+    "accepted_phrases": [
+      "void méthode",
+      "méthode sans retour",
+      "void maMéthode"
+    ],
+    "difficulty": "easy",
+    "explanation": "Le mot-clé `void` signifie que la méthode ne retourne aucune valeur.",
+    "context": "méthodes"
+  },
+  {
+    "langage": "csharp",
+    "question": "Que fait le mot-clé `static` en C# ?",
+    "answers": ["Indique que le membre appartient à la classe et non à une instance"],
+    "accepted_phrases": [
+      "membre statique",
+      "appartient à la classe",
+      "static sans instance"
+    ],
+    "difficulty": "medium",
+    "explanation": "`static` signifie que la méthode ou variable appartient à la classe elle-même, pas aux objets.",
+    "context": "modificateurs"
+  },
+  {
+    "langage": "csharp",
+    "question": "Comment crée-t-on un tableau d’entiers de taille 5 ?",
+    "answers": ["`int[] tab = new int[5];`"],
+    "accepted_phrases": [
+      "tableau int taille 5",
+      "int tableau 5",
+      "int[] tab = new int[5]"
+    ],
+    "difficulty": "easy",
+    "explanation": "Cette syntaxe crée un tableau de 5 entiers initialisés à 0.",
+    "context": "tableaux"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quelle est la différence entre `==` et `.Equals()` en C# ?",
+    "answers": [
+      "`==` compare les valeurs ou références, `.Equals()` compare le contenu",
+      "== compare valeurs ou références",
+      ".Equals() compare contenu"
+    ],
+    "accepted_phrases": [
+      "== compare valeurs",
+      ".Equals() contenu",
+      "différence == et Equals"
+    ],
+    "difficulty": "medium",
+    "explanation": "`==` peut comparer références ou valeurs selon le type, `.Equals()` est souvent redéfini pour comparer le contenu.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "csharp",
+    "question": "Que fait `using` en début de fichier ?",
+    "answers": ["Importe un namespace"],
+    "accepted_phrases": [
+      "using importe",
+      "directive using",
+      "import namespace"
+    ],
+    "difficulty": "easy",
+    "explanation": "`using` permet d’accéder aux classes d’un namespace sans écrire son nom complet.",
+    "context": "namespaces"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quelle exception est lancée en cas de division par zéro sur un entier ?",
+    "answers": ["DivideByZeroException"],
+    "accepted_phrases": [
+      "dividebyzeroexception",
+      "exception division par zéro",
+      "erreur division par zéro"
+    ],
+    "difficulty": "medium",
+    "explanation": "C’est l’exception levée par le runtime en cas de division entière par zéro.",
+    "context": "exceptions"
+  },
+  {
+    "langage": "csharp",
+    "question": "Comment créer une classe en C# ?",
+    "answers": ["`public class MaClasse { }`"],
+    "accepted_phrases": [
+      "déclaration classe",
+      "public class",
+      "créer une classe"
+    ],
+    "difficulty": "easy",
+    "explanation": "Cette syntaxe crée une classe publique nommée `MaClasse`.",
+    "context": "classes"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quelle est la valeur par défaut d'un `int` non initialisé ?",
+    "answers": ["0"],
+    "accepted_phrases": ["zéro", "0", "valeur par défaut 0"],
+    "difficulty": "easy",
+    "explanation": "En C#, un `int` non initialisé dans une classe vaut 0 par défaut.",
+    "context": "types"
+  },
+  {
+    "langage": "csharp",
+    "question": "Comment écrire un commentaire sur une seule ligne ?",
+    "answers": ["// commentaire"],
+    "accepted_phrases": ["// commentaire", "double slash", "commentaire sur une ligne"],
+    "difficulty": "easy",
+    "explanation": "Le `//` démarre un commentaire sur une ligne en C#.",
+    "context": "syntax"
+  },
+  {
+    "langage": "csharp",
+    "question": "Que fait le mot-clé `break` dans une boucle ?",
+    "answers": ["Sort de la boucle immédiatement"],
+    "accepted_phrases": ["sort de la boucle", "interrompt la boucle", "break quitte la boucle"],
+    "difficulty": "easy",
+    "explanation": "`break` interrompt l’exécution de la boucle en cours.",
+    "context": "contrôle de flux"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quelle est la portée d’une variable déclarée dans un bloc `{}` ?",
+    "answers": ["Limitée au bloc"],
+    "accepted_phrases": ["portée limitée au bloc", "visible dans le bloc", "scope local au bloc"],
+    "difficulty": "medium",
+    "explanation": "Une variable déclarée dans un bloc est accessible uniquement dans ce bloc.",
+    "context": "portée"
+  },
+  {
+    "langage": "csharp",
+    "question": "Que signifie `null` en C# ?",
+    "answers": ["Absence de référence à un objet"],
+    "accepted_phrases": ["valeur null", "pas d'objet", "référence vide"],
+    "difficulty": "easy",
+    "explanation": "`null` indique qu'une variable de type référence ne pointe sur aucun objet.",
+    "context": "types"
+  },
+  {
+    "langage": "csharp",
+    "question": "Comment concaténer deux chaînes `a` et `b` ?",
+    "answers": ["`a + b`"],
+    "accepted_phrases": ["concaténation +", "a plus b", "joindre chaînes"],
+    "difficulty": "easy",
+    "explanation": "L’opérateur `+` concatène des chaînes en C#.",
+    "context": "chaînes"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quel type permet de stocker un nombre décimal en C# ?",
+    "answers": ["`double` ou `float`"],
+    "accepted_phrases": ["double", "float", "nombre décimal"],
+    "difficulty": "easy",
+    "explanation": "`double` et `float` sont les types pour nombres à virgule flottante.",
+    "context": "types"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quelle structure de contrôle permet d’exécuter du code selon plusieurs cas ?",
+    "answers": ["`switch`"],
+    "accepted_phrases": ["switch", "structure switch", "plusieurs cas"],
+    "difficulty": "easy",
+    "explanation": "`switch` teste une variable et exécute le bloc correspondant au cas.",
+    "context": "contrôle de flux"
+  },
+  {
+    "langage": "csharp",
+    "question": "Comment lancer une exception personnalisée ?",
+    "answers": ["`throw new Exception(\"message\");`"],
+    "accepted_phrases": ["throw exception", "lancer exception", "throw new Exception"],
+    "difficulty": "medium",
+    "explanation": "Le mot-clé `throw` permet de lever une exception en C#.",
+    "context": "exceptions"
+  },
+  {
+    "langage": "csharp",
+    "question": "Quelle méthode est appelée automatiquement lors de la création d’un objet ?",
+    "answers": ["Le constructeur"],
+    "accepted_phrases": ["constructeur", "méthode constructeur", "méthode d'initialisation"],
+    "difficulty": "easy",
+    "explanation": "Le constructeur initialise un objet au moment de son instanciation.",
+    "context": "classes"
+  }
+]

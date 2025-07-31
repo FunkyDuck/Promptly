@@ -1,0 +1,182 @@
+[
+    {
+    "langage": "java",
+    "question": "Que va afficher ce code ?\n```java\nint a = 3;\nint b = 3;\nSystem.out.println(a == b);\n```",
+    "answers": ["true"],
+    "accepted_phrases": ["true", "cela retournera true", "vrai", "true sera affiché"],
+    "difficulty": "easy",
+    "explanation": "En Java, `==` compare les valeurs pour les types primitifs. Ici, `a` et `b` valent tous deux 3, donc `true`.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "java",
+    "question": "Quelle est la portée de la variable `i` dans ce code ?\n```java\nfor (int i = 0; i < 10; i++) {\n    System.out.print(i);\n}\nSystem.out.println(i);\n```",
+    "answers": ["erreur de compilation", "compilation error"],
+    "accepted_phrases": ["il y a une erreur de compilation", "i n'est pas accessible après la boucle", "compilation error"],
+    "difficulty": "medium",
+    "explanation": "La variable `i` est déclarée dans la boucle `for`, elle n'est donc accessible qu'à l'intérieur de celle-ci.",
+    "context": "portée"
+  },
+  {
+    "langage": "java",
+    "question": "Quelle exception est levée ici ?\n```java\nString s = null;\ns.length();\n```",
+    "answers": ["NullPointerException"],
+    "accepted_phrases": ["nullpointerexception", "une nullpointerexception", "exception de type nullpointerexception"],
+    "difficulty": "easy",
+    "explanation": "On tente d'appeler une méthode sur une référence `null`, ce qui lance une `NullPointerException`.",
+    "context": "exceptions"
+  },
+  {
+    "langage": "java",
+    "question": "Que va afficher ce code ?\n```java\nString a = \"hello\";\nString b = new String(\"hello\");\nSystem.out.println(a == b);\n```",
+    "answers": ["false"],
+    "accepted_phrases": ["false", "cela retournera false", "faux"],
+    "difficulty": "medium",
+    "explanation": "En Java, `==` compare les références pour les objets. Ici, `a` et `b` pointent sur deux objets différents.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "java",
+    "question": "Quel est le type retourné par `System.out.println()` ?",
+    "answers": ["void"],
+    "accepted_phrases": ["void", "elle ne retourne rien", "le type est void"],
+    "difficulty": "easy",
+    "explanation": "`System.out.println()` est une méthode `void`, elle affiche une valeur mais ne retourne rien.",
+    "context": "types"
+  },
+  {
+    "langage": "java",
+    "question": "Combien d'éléments ce tableau contient-il ?\n```java\nint[] tab = new int[5];\n```",
+    "answers": ["5"],
+    "accepted_phrases": ["5", "cinq", "le tableau contient 5 éléments"],
+    "difficulty": "easy",
+    "explanation": "Le tableau `tab` est initialisé avec une taille de 5 éléments, tous initialisés à 0.",
+    "context": "tableaux"
+  },
+  {
+    "langage": "java",
+    "question": "Quelle est la valeur de `x` après l'exécution ?\n```java\nint x = 5;\nx += 3;\n```",
+    "answers": ["8"],
+    "accepted_phrases": ["8", "huit", "la valeur sera 8"],
+    "difficulty": "easy",
+    "explanation": "`x += 3` est équivalent à `x = x + 3`, donc `x` vaut 8.",
+    "context": "opérateurs"
+  },
+  {
+    "langage": "java",
+    "question": "Que se passe-t-il si on appelle `Integer.parseInt(\"abc\")` ?",
+    "answers": ["NumberFormatException"],
+    "accepted_phrases": ["numberformatexception", "une numberformatexception", "exception de type numberformatexception"],
+    "difficulty": "medium",
+    "explanation": "`parseInt` tente de convertir une chaîne en entier. Si la chaîne n'est pas un nombre, une `NumberFormatException` est lancée.",
+    "context": "exceptions"
+  },
+  {
+    "langage": "java",
+    "question": "Que va afficher ce code ?\n```java\nSystem.out.println(10 / 3);\n```",
+    "answers": ["3"],
+    "accepted_phrases": ["3", "trois", "le résultat est 3"],
+    "difficulty": "easy",
+    "explanation": "En Java, la division entre deux entiers donne un entier. 10 / 3 = 3 (la partie décimale est ignorée).",
+    "context": "arithmétique"
+  },
+  {
+    "langage": "java",
+    "question": "Quelle est la sortie du code suivant ?\n```java\nSystem.out.println(\"Java\" + 1 + 2);\n```",
+    "answers": ["Java12"],
+    "accepted_phrases": ["java12", "cela affiche java12", "la sortie est java12"],
+    "difficulty": "medium",
+    "explanation": "L'opération est évaluée de gauche à droite : \"Java\" + 1 = \"Java1\", puis \"Java1\" + 2 = \"Java12\".",
+    "context": "concaténation"
+  },
+  {
+    "langage": "java",
+    "question": "Que va afficher ce code ?\n```java\nSystem.out.println(\"Hello\".length());\n```",
+    "answers": ["5"],
+    "accepted_phrases": ["5", "cinq", "la longueur est 5"],
+    "difficulty": "easy",
+    "explanation": "La méthode `.length()` sur une chaîne retourne le nombre de caractères.",
+    "context": "strings"
+  },
+  {
+    "langage": "java",
+    "question": "Quelle est la sortie ?\n```java\nint[] arr = {1, 2, 3};\nSystem.out.println(arr[3]);\n```",
+    "answers": ["ArrayIndexOutOfBoundsException"],
+    "accepted_phrases": ["arrayindexoutofboundsexception", "erreur d’indice", "exception d’indice", "dépassement de tableau"],
+    "difficulty": "medium",
+    "explanation": "L’indice 3 est hors limite (le tableau va de 0 à 2), donc une `ArrayIndexOutOfBoundsException` est lancée.",
+    "context": "exceptions"
+  },
+  {
+    "langage": "java",
+    "question": "Quelle est la sortie ?\n```java\nSystem.out.println(2 + 3 * 4);\n```",
+    "answers": ["14"],
+    "accepted_phrases": ["14", "quatorze", "le résultat est 14"],
+    "difficulty": "easy",
+    "explanation": "Les multiplications sont faites avant les additions, donc 3*4 = 12, puis 2 + 12 = 14.",
+    "context": "arithmétique"
+  },
+  {
+    "langage": "java",
+    "question": "Que fait le mot-clé `static` en Java ?",
+    "answers": ["Il rend une méthode ou une variable accessible sans créer d’objet"],
+    "accepted_phrases": ["sans objet", "accessible sans instancier", "lié à la classe", "utilisé sans objet"],
+    "difficulty": "medium",
+    "explanation": "`static` signifie que l’élément appartient à la classe et non à une instance.",
+    "context": "modificateurs"
+  },
+  {
+    "langage": "java",
+    "question": "Quel est le résultat ?\n```java\nString s = \"Java\";\ns = s.toUpperCase();\nSystem.out.println(s);\n```",
+    "answers": ["JAVA"],
+    "accepted_phrases": ["java en majuscules", "JAVA", "cela affiche JAVA"],
+    "difficulty": "easy",
+    "explanation": "`toUpperCase()` retourne une nouvelle chaîne en majuscules.",
+    "context": "strings"
+  },
+  {
+    "langage": "java",
+    "question": "Comment déclare-t-on une méthode qui ne retourne rien et prend un entier en paramètre ?",
+    "answers": ["void methode(int x)"],
+    "accepted_phrases": ["void methode(int x)", "une méthode void avec int", "déclaration void avec paramètre int"],
+    "difficulty": "medium",
+    "explanation": "Le mot-clé `void` indique l'absence de retour, et les paramètres sont placés entre parenthèses.",
+    "context": "méthodes"
+  },
+  {
+    "langage": "java",
+    "question": "Quelle interface est utilisée pour représenter une collection triée sans doublons ?",
+    "answers": ["Set", "SortedSet"],
+    "accepted_phrases": ["set", "sortedset", "une collection sans doublons", "interface set"],
+    "difficulty": "hard",
+    "explanation": "`Set` ne contient pas de doublons, et `SortedSet` les trie en plus.",
+    "context": "collections"
+  },
+  {
+    "langage": "java",
+    "question": "Que va afficher ce code ?\n```java\nfor (int i = 1; i <= 3; i++) {\n    System.out.print(i);\n}\n```",
+    "answers": ["123"],
+    "accepted_phrases": ["123", "un deux trois", "cela affiche 123"],
+    "difficulty": "easy",
+    "explanation": "La boucle `for` affiche 1, 2, puis 3 sans saut de ligne.",
+    "context": "boucles"
+  },
+  {
+    "langage": "java",
+    "question": "Quelle est la différence entre `==` et `.equals()` en Java ?",
+    "answers": ["`==` compare les références, `.equals()` compare les contenus"],
+    "accepted_phrases": ["== compare les références", "equals compare les contenus", "références vs contenu"],
+    "difficulty": "hard",
+    "explanation": "`==` vérifie si deux objets sont les mêmes instances, `.equals()` compare les valeurs internes.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "java",
+    "question": "Quel est le mot-clé utilisé pour hériter d'une classe en Java ?",
+    "answers": ["extends"],
+    "accepted_phrases": ["extends", "mot-clé extends", "héritage avec extends"],
+    "difficulty": "medium",
+    "explanation": "`extends` permet de créer une classe fille à partir d'une classe mère.",
+    "context": "héritage"
+  }
+]

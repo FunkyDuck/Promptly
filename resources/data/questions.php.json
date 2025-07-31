@@ -1,0 +1,264 @@
+[
+    {
+    "langage": "php",
+    "question": "Que va afficher le code suivant ?\n```php\n$a = 5;\n$b = '5';\nvar_dump($a == $b);\n```",
+    "answers": ["bool(true)", "true"],
+    "accepted_phrases": [
+      "true",
+      "cela retournera true",
+      "booléen true"
+    ],
+    "difficulty": "easy",
+    "explanation": "L'opérateur `==` en PHP effectue une comparaison avec conversion de type. Donc 5 (int) == '5' (string) => true.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "php",
+    "question": "Quel sera le résultat de ce code ?\n```php\n$foo = [1, 2, 3];\necho $foo[3] ?? 'empty';\n```",
+    "answers": ["empty"],
+    "accepted_phrases": [
+      "le texte 'empty'",
+      "empty",
+      "'empty'"
+    ],
+    "difficulty": "medium",
+    "explanation": "L'opérateur null coalescent `??` renvoie 'empty' car l’index 3 n’existe pas dans le tableau.",
+    "context": "opérateurs"
+  },
+  {
+    "langage": "php",
+    "question": "Quelle est la différence entre `==` et `===` en PHP ?",
+    "answers": ["le triple égal compare aussi les types", "`===` compare les types", "`==` ne compare pas les types"],
+    "accepted_phrases": [
+      "`===` compare les types",
+      "== compare les valeurs, === compare les types aussi",
+      "le triple égal vérifie aussi le type",
+      "le double égal ne vérifie pas le type"
+    ],
+    "difficulty": "medium",
+    "explanation": "`==` compare les valeurs après conversion, `===` compare valeur ET type.",
+    "context": "comparaison"
+  },
+  {
+    "langage": "php",
+    "question": "Comment déclare-t-on une fonction en PHP ?",
+    "answers": ["function", "mot-clé function"],
+    "accepted_phrases": [
+      "avec le mot-clé function",
+      "on utilise function",
+      "en écrivant function"
+    ],
+    "difficulty": "easy",
+    "explanation": "Le mot-clé `function` permet de déclarer une fonction.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "php",
+    "question": "Quelle fonction PHP permet d'afficher le contenu détaillé d'une variable ?",
+    "answers": ["var_dump", "var_dump()"],
+    "accepted_phrases": [
+      "var_dump",
+      "la fonction var_dump",
+      "on utilise var_dump"
+    ],
+    "difficulty": "easy",
+    "explanation": "`var_dump()` affiche le type et la valeur d’une variable.",
+    "context": "debug"
+  },
+  {
+    "langage": "php",
+    "question": "Que renvoie `isset(\\$a)` si \\$a n'existe pas ?",
+    "answers": ["false"],
+    "accepted_phrases": [
+      "false",
+      "cela renvoie false",
+      "la variable n'étant pas définie, ça donne false"
+    ],
+    "difficulty": "easy",
+    "explanation": "`isset()` retourne false si la variable n’est pas définie ou est null.",
+    "context": "variables"
+  },
+  {
+    "langage": "php",
+    "question": "Quelle est la différence entre `include` et `require` en PHP ?",
+    "answers": ["require provoque une erreur fatale", "require arrête le script en cas d’erreur"],
+    "accepted_phrases": [
+      "require provoque une erreur fatale",
+      "include émet juste un warning",
+      "require arrête le script",
+      "include continue même s’il échoue"
+    ],
+    "difficulty": "medium",
+    "explanation": "`require` arrête l'exécution en cas d'erreur, `include` affiche juste un warning.",
+    "context": "fichiers"
+  },
+  {
+    "langage": "php",
+    "question": "Que fait l'opérateur `??` en PHP ?",
+    "answers": ["opérateur de coalescence nulle", "retourne la première valeur définie"],
+    "accepted_phrases": [
+      "retourne la première valeur non null",
+      "coalescence nulle",
+      "opérateur pour valeurs par défaut"
+    ],
+    "difficulty": "medium",
+    "explanation": "`??` retourne la première valeur définie, sinon la suivante.",
+    "context": "opérateurs"
+  },
+  {
+    "langage": "php",
+    "question": "Que retourne `empty([])` ?",
+    "answers": ["true"],
+    "accepted_phrases": [
+      "true",
+      "le tableau vide est considéré vide",
+      "cela retourne true"
+    ],
+    "difficulty": "medium",
+    "explanation": "`empty([])` renvoie `true` car un tableau vide est évalué comme vide.",
+    "context": "fonctions"
+  },
+  {
+    "langage": "php",
+    "question": "Comment peut-on parcourir un tableau associatif en PHP ?",
+    "answers": ["avec foreach", "foreach"],
+    "accepted_phrases": [
+      "avec foreach",
+      "en utilisant foreach",
+      "la boucle foreach"
+    ],
+    "difficulty": "easy",
+    "explanation": "La boucle `foreach` est idéale pour les tableaux, y compris associatifs.",
+    "context": "boucles"
+  },
+  {
+    "langage": "php",
+    "question": "Comment déclarer une variable en PHP ?",
+    "answers": ["avec $", "on utilise $"],
+    "accepted_phrases": [
+      "avec $",
+      "utiliser le signe $",
+      "variable commence par $"
+    ],
+    "difficulty": "easy",
+    "explanation": "En PHP, toutes les variables commencent par le signe `$`.",
+    "context": "variables"
+  },
+  {
+    "langage": "php",
+    "question": "Quelle fonction PHP permet de concaténer deux chaînes de caractères ?",
+    "answers": ["."],
+    "accepted_phrases": [
+      "le point",
+      "utiliser le point",
+      "concaténation avec ."
+    ],
+    "difficulty": "easy",
+    "explanation": "Le point `.` est l’opérateur de concaténation en PHP.",
+    "context": "chaînes"
+  },
+  {
+    "langage": "php",
+    "question": "Quelle fonction sert à démarrer une session en PHP ?",
+    "answers": ["session_start()"],
+    "accepted_phrases": [
+      "session_start",
+      "démarrer une session",
+      "utiliser session_start()"
+    ],
+    "difficulty": "medium",
+    "explanation": "`session_start()` initialise une session PHP ou reprend une session existante.",
+    "context": "sessions"
+  },
+  {
+    "langage": "php",
+    "question": "Comment vérifier si une clé existe dans un tableau PHP ?",
+    "answers": ["array_key_exists()"],
+    "accepted_phrases": [
+      "array_key_exists",
+      "vérifier la clé",
+      "fonction array_key_exists()"
+    ],
+    "difficulty": "medium",
+    "explanation": "`array_key_exists()` vérifie si une clé est définie dans un tableau.",
+    "context": "tableaux"
+  },
+  {
+    "langage": "php",
+    "question": "Quelle est la portée d’une variable définie à l’intérieur d’une fonction ?",
+    "answers": ["locale"],
+    "accepted_phrases": [
+      "locale",
+      "portée locale",
+      "variable locale"
+    ],
+    "difficulty": "easy",
+    "explanation": "Les variables déclarées dans une fonction ne sont accessibles que dans cette fonction.",
+    "context": "portée"
+  },
+  {
+    "langage": "php",
+    "question": "Comment créer un tableau indexé en PHP ?",
+    "answers": ["[]", "array()"],
+    "accepted_phrases": [
+      "avec []",
+      "avec array()",
+      "tableau indexé"
+    ],
+    "difficulty": "easy",
+    "explanation": "Les tableaux indexés se créent avec `[]` ou la fonction `array()`.",
+    "context": "tableaux"
+  },
+  {
+    "langage": "php",
+    "question": "Quelle fonction PHP permet d’obtenir la longueur d’une chaîne ?",
+    "answers": ["strlen()"],
+    "accepted_phrases": [
+      "strlen",
+      "longueur de chaîne",
+      "fonction strlen()"
+    ],
+    "difficulty": "easy",
+    "explanation": "`strlen()` renvoie le nombre de caractères d’une chaîne.",
+    "context": "chaînes"
+  },
+  {
+    "langage": "php",
+    "question": "Comment arrêter l’exécution d’un script PHP immédiatement ?",
+    "answers": ["exit()", "die()"],
+    "accepted_phrases": [
+      "exit",
+      "die",
+      "arrêter script"
+    ],
+    "difficulty": "medium",
+    "explanation": "`exit()` et `die()` arrêtent l’exécution du script.",
+    "context": "contrôle"
+  },
+  {
+    "langage": "php",
+    "question": "Comment déclarer une constante en PHP ?",
+    "answers": ["define()"],
+    "accepted_phrases": [
+      "define",
+      "constante avec define",
+      "utiliser define()"
+    ],
+    "difficulty": "medium",
+    "explanation": "`define()` permet de définir une constante.",
+    "context": "constantes"
+  },
+  {
+    "langage": "php",
+    "question": "Que renvoie la fonction `count()` appliquée à un tableau ?",
+    "answers": ["le nombre d’éléments"],
+    "accepted_phrases": [
+      "nombre d’éléments",
+      "taille du tableau",
+      "count() renvoie la taille"
+    ],
+    "difficulty": "easy",
+    "explanation": "`count()` retourne le nombre d’éléments dans un tableau.",
+    "context": "tableaux"
+  }
+]

@@ -12,21 +12,33 @@ class QuestionCommand {
         $userId = $message->author->id;
         $lang = $params[0] ?? null;
 
-        $questions = json_decode(file_get_contents(__DIR__ . '/../../resources/questions.json'), true);
-
-        if(!$questions) {
-            $message->channel->sendMessage('Pas de question... Tu veux en parler au canard en plastique? 🦆');
-            return;
-        }
-
+        $resourcesDir = __DIR__ . '/../../resources/data/';
+            
         // Filter by langage if is requested
         if($lang) {
-            $filtered = array_filter($questions, fn($q) => strtolower($q['langage']) == strtolower($lang));
-            if(empty($filtered)) {
+            if($lang == 'js') $lang = 'javascript'; 
+            if($lang == 'c#') $lang = 'csharp';
+            
+            $file = $resourcesDir . 'questions.' . $lang . '.json';
+            if(!file_exists($file)) {
                 $message->channel->sendMessage("Pas de questions disponibles pour le langage '{$lang}' parce que le dev avait la flemme.");
                 return;
             }
-            $questions = array_values($filtered);
+        }
+        else {
+            $files = glob($resourcesDir . 'questions.*.json');
+            if(empty($files)) {
+                $message->channel->sendMessage('Pas de question... Tu veux en parler au canard en plastique? 🦆');
+                return;
+            }
+            $file = $files[array_rand($files)];
+        }
+
+        $questions = json_decode(file_get_contents($file), true);
+
+        if(!$questions) {
+            $message->channel->sendMessage("⛈️ Les questions sont corrompues, comme ton historique de commits.");
+            return;
         }
 
         $question = $questions[array_rand($questions)];
@@ -47,9 +59,6 @@ class QuestionCommand {
         $questionKey = "{$userId}-{$message->guild_id}-{$message->channel_id}";
 
         if(!isset(self::$activeQuestions[$questionKey])) return;
-
-//         error_log("tryAnswer: looking for key: $questionKey");
-// error_log("current keys: " . implode(', ', array_keys(self::$activeQuestions)));
 
         $data = self::$activeQuestions[$questionKey];
         $question = $data['question'];
