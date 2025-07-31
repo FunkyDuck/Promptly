@@ -26,6 +26,6 @@ class HelloWorldCommand {
 
         $code = $codes[array_rand($codes)];
 
-        $message->channel->sendMessage("## Pour afficher `Hello World!` en `{$code['lang']}`\n```{$code['code']}```");
+        $message->channel->sendMessage("## Pour afficher `Hello World!` en `{$code['lang']}`\n```{$code['lang']}\n{$code['code']}```");
     }
 }
