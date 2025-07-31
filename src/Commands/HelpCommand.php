@@ -22,7 +22,7 @@ class HelpCommand {
         }
 
         if($command) {
-            $commandHelp = array_filter($data['help'], fn($c) => strtolower($c['command']) == strtolower($command));
+            $commandHelp = array_find($data['help'], fn($c) => strtolower($c['command']) == strtolower($command));
 
             if(!$commandHelp) {
                 $message->channel->sendMessage("🧑‍🦯 La seule personne a avoir vu cette commande, c'est Gilbert Montagné.\n_Commande `{$command}`inexistante_");
