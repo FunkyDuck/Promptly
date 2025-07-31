@@ -46,11 +46,10 @@ class QuestionCommand {
         $content = trim($message->content);
         $questionKey = "{$userId}-{$message->guild_id}-{$message->channel_id}";
 
-        if(
-            !isset(self::$activeQuestions[$questionKey]) || 
-            self::$activeQuestions[$userId]['server'] != $message->guild_id || 
-            self::$activeQuestions[$userId]['channel'] != $message->channel_id
-        ) return;
+        if(!isset(self::$activeQuestions[$questionKey])) return;
+
+        error_log("tryAnswer: looking for key: $questionKey");
+error_log("current keys: " . implode(', ', array_keys(self::$activeQuestions)));
 
         $data = self::$activeQuestions[$questionKey];
         $question = $data['question'];
