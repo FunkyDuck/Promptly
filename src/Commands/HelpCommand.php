@@ -2,6 +2,7 @@
 
 namespace Promptly\Commands;
 
+use Promptly\Config\Version;
 use Discord\Parts\Channel\Message;
 
 class HelpCommand {
@@ -28,7 +29,7 @@ class HelpCommand {
                 $message->channel->sendMessage("🧑‍🦯 La seule personne a avoir vu cette commande, c'est Gilbert Montagné.\n_Commande `{$command}`inexistante_");
                 return;
             }
-            $response = "#Commande `{$command}`:\n{$commandHelp['description']}\n_{$commandHelp['details']}_";
+            $response = "# Commande `{$command}`:\n{$commandHelp['description']}\n_{$commandHelp['details']}_";
             $message->channel->sendMessage($response);
         }
         else {
@@ -37,6 +38,8 @@ class HelpCommand {
             foreach($data['help'] as $entry) {
                 $response .= "• `{$entry['command']}` : _{$entry['description']}_\n";
             }
+
+            $response .= "\n_**Promptly** Version : " . Version::VERSION . "_";
             
             $message->channel->sendMessage($response);
         }
