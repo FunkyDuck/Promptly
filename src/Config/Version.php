@@ -3,5 +3,5 @@
 namespace Promptly\Config;
 
 class Version {
-    public const VERSION = '0.5.5';
+    public const VERSION = '0.5.6';
 }

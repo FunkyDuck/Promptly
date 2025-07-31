@@ -32,11 +32,10 @@ class QuestionCommand {
         $question = $questions[array_rand($questions)];
 
         // register question for user
-        self::$activeQuestions[$userId] = [
+        $questionKey = "{$userId}-{$message->guild_id}-{$message->channel_id}";
+        self::$activeQuestions[$questionKey] = [
             "question" => $question, 
-            "timestamp" => time(),
-            "server" => $message->guild_id,
-            "channel" => $message->channel_id
+            "timestamp" => time()
         ];
 
         $message->channel->sendMessage("## J'ai une question **'{$question['langage']}'** pour toi :\n**{$question['question']}**\n_Réponds directement dans ce canal._");
@@ -45,19 +44,20 @@ class QuestionCommand {
     public static function tryAnswer(Message $message): void {
         $userId = $message->author->id;
         $content = trim($message->content);
+        $questionKey = "{$userId}-{$message->guild_id}-{$message->channel_id}";
 
         if(
-            !isset(self::$activeQuestions[$userId]) || 
+            !isset(self::$activeQuestions[$questionKey]) || 
             self::$activeQuestions[$userId]['server'] != $message->guild_id || 
             self::$activeQuestions[$userId]['channel'] != $message->channel_id
         ) return;
 
-        $data = self::$activeQuestions[$userId];
+        $data = self::$activeQuestions[$questionKey];
         $question = $data['question'];
 
         
         // Kill the question (only one answer)
-        unset(self::$activeQuestions[$userId]);
+        unset(self::$activeQuestions[$questionKey]);
         
         if(time() - $data['timestamp'] > self::TIMEOUT) {
             $message->channel->sendMessage("⌛ Tu as oublié que tu avais une question en cours? Ton temps est écoulé <@{$userId}>...");
