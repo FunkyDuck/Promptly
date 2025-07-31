@@ -1,0 +1,182 @@
+[
+  {
+    "langage": "git",
+    "question": "Quelle commande permet d'initialiser un nouveau dépôt Git ?",
+    "answers": ["git init"],
+    "accepted_phrases": ["git init", "initialiser avec git init"],
+    "difficulty": "easy",
+    "explanation": "`git init` crée un dépôt Git vide dans le répertoire courant.",
+    "context": "init"
+  },
+  {
+    "langage": "git",
+    "question": "Comment cloner un dépôt distant ?",
+    "answers": ["git clone <url>"],
+    "accepted_phrases": ["git clone", "cloner avec git clone"],
+    "difficulty": "easy",
+    "explanation": "`git clone` permet de copier un dépôt distant en local.",
+    "context": "clone"
+  },
+  {
+    "langage": "git",
+    "question": "Quelle commande affiche l'historique des commits ?",
+    "answers": ["git log"],
+    "accepted_phrases": ["git log", "voir l'historique avec git log"],
+    "difficulty": "easy",
+    "explanation": "`git log` liste les commits récents du projet.",
+    "context": "log"
+  },
+  {
+    "langage": "git",
+    "question": "Comment ajouter un fichier au suivi de Git ?",
+    "answers": ["git add <fichier>"],
+    "accepted_phrases": ["git add", "ajouter avec git add"],
+    "difficulty": "easy",
+    "explanation": "`git add` indique à Git qu'un fichier doit être inclus au prochain commit.",
+    "context": "add"
+  },
+  {
+    "langage": "git",
+    "question": "Quelle commande crée un commit ?",
+    "answers": ["git commit -m <message>"],
+    "accepted_phrases": ["git commit", "faire un commit", "git commit -m"],
+    "difficulty": "easy",
+    "explanation": "`git commit -m` crée un snapshot des modifications indexées avec un message.",
+    "context": "commit"
+  },
+  {
+    "langage": "git",
+    "question": "Comment créer une nouvelle branche ?",
+    "answers": ["git branch <nom>"],
+    "accepted_phrases": ["git branch", "créer une branche avec git branch"],
+    "difficulty": "medium",
+    "explanation": "`git branch` permet de créer une nouvelle branche sans changer de branche actuelle.",
+    "context": "branch"
+  },
+  {
+    "langage": "git",
+    "question": "Comment basculer vers une autre branche ?",
+    "answers": ["git checkout <nom>"],
+    "accepted_phrases": ["git checkout", "changer de branche"],
+    "difficulty": "medium",
+    "explanation": "`git checkout` permet de naviguer entre les branches.",
+    "context": "checkout"
+  },
+  {
+    "langage": "git",
+    "question": "Quelle commande fusionne une branche dans la branche courante ?",
+    "answers": ["git merge <nom>"],
+    "accepted_phrases": ["git merge", "fusionner avec git merge"],
+    "difficulty": "medium",
+    "explanation": "`git merge` permet de fusionner les modifications d’une branche dans celle courante.",
+    "context": "merge"
+  },
+  {
+    "langage": "git",
+    "question": "Comment supprimer une branche localement ?",
+    "answers": ["git branch -d <nom>"],
+    "accepted_phrases": ["git branch -d", "supprimer une branche avec git"],
+    "difficulty": "medium",
+    "explanation": "`git branch -d` supprime une branche locale si elle a été fusionnée.",
+    "context": "branch"
+  },
+  {
+    "langage": "git",
+    "question": "Comment voir les fichiers modifiés mais non commités ?",
+    "answers": ["git status"],
+    "accepted_phrases": ["git status", "voir l'état avec git status"],
+    "difficulty": "easy",
+    "explanation": "`git status` affiche les fichiers modifiés, ajoutés ou non suivis.",
+    "context": "status"
+  },
+  {
+    "langage": "git",
+    "question": "Quelle commande envoie les commits locaux sur un dépôt distant ?",
+    "answers": ["git push"],
+    "accepted_phrases": ["git push", "pousser avec git"],
+    "difficulty": "easy",
+    "explanation": "`git push` synchronise les commits locaux avec le dépôt distant.",
+    "context": "push"
+  },
+  {
+    "langage": "git",
+    "question": "Comment récupérer les nouvelles modifications d’un dépôt distant ?",
+    "answers": ["git pull"],
+    "accepted_phrases": ["git pull", "mettre à jour avec git pull"],
+    "difficulty": "easy",
+    "explanation": "`git pull` télécharge les commits distants et les fusionne automatiquement.",
+    "context": "pull"
+  },
+  {
+    "langage": "git",
+    "question": "Comment annuler le dernier commit local sans perdre les modifications ?",
+    "answers": ["git reset --soft HEAD~1"],
+    "accepted_phrases": ["reset soft", "git reset --soft", "annuler commit sans perdre modifs"],
+    "difficulty": "hard",
+    "explanation": "`git reset --soft HEAD~1` revient en arrière d’un commit sans toucher au staging.",
+    "context": "reset"
+  },
+  {
+    "langage": "git",
+    "question": "Quelle commande permet de récupérer une ancienne version d’un fichier ?",
+    "answers": ["git checkout <commit> -- <fichier>"],
+    "accepted_phrases": ["git checkout fichier", "restaurer un fichier avec git checkout"],
+    "difficulty": "hard",
+    "explanation": "`git checkout` permet de restaurer un fichier depuis un commit antérieur.",
+    "context": "checkout"
+  },
+  {
+    "langage": "git",
+    "question": "Que fait la commande `git stash` ?",
+    "answers": ["Elle met de côté les modifications non commités"],
+    "accepted_phrases": ["stocker les modifs", "stash temporairement", "git stash"],
+    "difficulty": "medium",
+    "explanation": "`git stash` sauvegarde temporairement les modifications non commités.",
+    "context": "stash"
+  },
+  {
+    "langage": "git",
+    "question": "Comment voir les différences entre deux commits ?",
+    "answers": ["git diff <commit1> <commit2>"],
+    "accepted_phrases": ["git diff", "comparer deux commits"],
+    "difficulty": "medium",
+    "explanation": "`git diff` permet de visualiser les changements entre deux versions.",
+    "context": "diff"
+  },
+  {
+    "langage": "git",
+    "question": "Comment récupérer un dépôt distant sans fusionner automatiquement ?",
+    "answers": ["git fetch"],
+    "accepted_phrases": ["git fetch", "récupérer sans fusionner"],
+    "difficulty": "medium",
+    "explanation": "`git fetch` télécharge les objets distants mais ne les fusionne pas.",
+    "context": "fetch"
+  },
+  {
+    "langage": "git",
+    "question": "Que fait `git rebase` ?",
+    "answers": ["Rejoue les commits sur une autre base"],
+    "accepted_phrases": ["rebase", "réappliquer commits", "changer la base"],
+    "difficulty": "hard",
+    "explanation": "`git rebase` permet de rejouer les commits sur une autre branche, gardant un historique plus linéaire.",
+    "context": "rebase"
+  },
+  {
+    "langage": "git",
+    "question": "Quelle commande annule toutes les modifications locales d’un fichier ?",
+    "answers": ["git checkout -- <fichier>"],
+    "accepted_phrases": ["git checkout fichier", "annuler modifs fichier"],
+    "difficulty": "medium",
+    "explanation": "`git checkout -- fichier` restaure la dernière version commitée du fichier.",
+    "context": "checkout"
+  },
+  {
+    "langage": "git",
+    "question": "Quelle commande affiche les branches distantes ?",
+    "answers": ["git branch -r"],
+    "accepted_phrases": ["branches distantes", "git branch -r", "voir branches remote"],
+    "difficulty": "medium",
+    "explanation": "`git branch -r` liste les branches disponibles sur le dépôt distant.",
+    "context": "branch"
+  }
+]

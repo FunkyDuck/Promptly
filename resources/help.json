@@ -17,16 +17,18 @@
       "description": "Balance un conseil de dev utile pour améliorer ton code et ta prod."
     },
     {
-      "command": "!question [lang]",
-      "description": "Lance une question technique aléatoire, optionnellement filtrée par langage."
+      "command": "!question",
+      "description": "Lance une question technique aléatoire, optionnellement filtrée par langage.",
+      "details": "Exemple : `!question python`\nLangages supportés : php, javascript, html, python, css, java, c#, sql, git\nNiveau de difficulté aléatoire (easy à hard)."
     },
     {
-      "command": "!hello-world [lang]",
-      "description": "Affiche un code 'Hello World' dans le langage spécifié ou un random si pas d’argument."
+      "command": "!hello-world",
+      "description": "Affiche un code 'Hello World' dans le langage spécifié ou un random si pas d’argument.",
+      "details": "Exemple : `!hello-world python`\n\nLangages disponibles :\n- php\n- python\n- javascript\n- bash\n- c\n- sql\n- csharp\n- java\n- ruby\n- lua\n- rust\n- postgresql\n- assembly\n- brainfuck\n\nSi aucun langage n'est précisé, un langage est choisi au hasard.\n\n⚠️ Certains langages comme `brainfuck` ou `assembly` sont purement pour le fun (ou les fous)."
     },
     {
       "command": "!help",
-      "description": "Affiche cette liste de commandes pour te guider."
+      "description": "Affiche cette liste de commandes pour te guider.\nTu peux faire `!help !commande` pour avoir plus d'infos sur une commande spécifique."
     }
   ]
 }
