@@ -17,6 +17,14 @@
       "description": "Balance un conseil de dev utile pour améliorer ton code et ta prod."
     },
     {
+      "command": "!question [lang]",
+      "description": "Lance une question technique aléatoire, optionnellement filtrée par langage."
+    },
+    {
+      "command": "!hello-world [lang]",
+      "description": "Affiche un code 'Hello World' dans le langage spécifié ou un random si pas d’argument."
+    },
+    {
       "command": "!help",
       "description": "Affiche cette liste de commandes pour te guider."
     }
