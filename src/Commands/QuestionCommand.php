@@ -48,8 +48,8 @@ class QuestionCommand {
 
         if(!isset(self::$activeQuestions[$questionKey])) return;
 
-        error_log("tryAnswer: looking for key: $questionKey");
-error_log("current keys: " . implode(', ', array_keys(self::$activeQuestions)));
+//         error_log("tryAnswer: looking for key: $questionKey");
+// error_log("current keys: " . implode(', ', array_keys(self::$activeQuestions)));
 
         $data = self::$activeQuestions[$questionKey];
         $question = $data['question'];

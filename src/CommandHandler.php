@@ -19,7 +19,8 @@ class CommandHandler {
         if(!str_starts_with($content, '!')) return;
 
         $args = explode(' ', ltrim($content, '!'));
-        $command = ucfirst(strtolower($args[0]));
+        $extractedCommand = strtolower($args[0]);
+        $command = ucfirst(str_replace('-', '', $extractedCommand));
         $params = array_slice($args, 1);
 
         echo "Commande détectée : {$command}\n";
