@@ -29,6 +29,7 @@ class HelpCommand {
                 return;
             }
             $response = "#Commande `{$command}`:\n{$commandHelp['description']}\n_{$commandHelp['details']}_";
+            $message->channel->sendMessage($response);
         }
         else {
             $response = "# Commandes disponibles:\n";
