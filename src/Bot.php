@@ -2,7 +2,9 @@
 
 namespace Promptly;
 
+use Promptly\EasterEggs;
 use Promptly\Commands\QuestionCommand;
+use Promptly\Commands\QuizzCommand;
 
 use Discord\Discord;
 use Discord\WebSockets\Event;
@@ -25,22 +27,11 @@ class Bot {
                 if($message->author->bot) return;
 
                 // Easter egg
-                if (preg_match('/(?<!\d)(42)(?!\d)|\bquarante[-\s]?deux\b/ui', $message->content)) {
-                    if(rand(0,2) == 0) {
-                        $responses = [
-                            "💫 *La réponse à la grande question sur la vie, l’univers et le reste...* **42**.",
-                            "🤖 *Tu es sûr de vouloir savoir ?*",
-                            "📚 *Demande à Deep Thought.*",
-                            "🚀 *N’oublie pas ta serviette.*"
-                        ];
-                        $message->reply($responses[array_rand($responses)]);
-                    }
-                    return;
-                }
+                if(EasterEggs::handle($message)) return;
 
-
-                // Try to treat it like an answer for opened question
+                // Try to treat it like an answer for opened question or Quizz
                 QuestionCommand::tryAnswer($message);
+                QuizzCommand::tryAnswer($message);
 
                 // And now to a classic command
                 CommandHandler::handle($message);
