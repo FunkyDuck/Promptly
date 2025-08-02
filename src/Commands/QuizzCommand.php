@@ -57,7 +57,7 @@ class QuizzCommand {
         $quizz['scores'] = [];
         $quizz['questionStartTime'] = time();
         
-        $message->channel->sendMessage("# C'est parti pour le Quizz 🧠\n**Première question ::**\n{$questions[0]['question']}");
+        $message->channel->sendMessage("# C'est parti pour le Quizz 🧠\n**Première question [{$quizz[0]['langage']}] ::**\n{$questions[0]['question']}");
         self::startTimer($quizzKey, $message);
     }
     
@@ -103,7 +103,7 @@ class QuizzCommand {
                 else {
                     // Next question
                     $nextQuestion = $quizz['questions'][$quizz['indexQuestion']]['question'];
-                    $message->channel->sendMessage("**Question suivante :**\n{$nextQuestion}");
+                    $message->channel->sendMessage("**Question suivante [{$nextQuestion['langage']}] :**\n{$nextQuestion}");
                     $quizz['questionStartTime'] = time();
                     self::startTimer($quizzKey, $message);
                 }
@@ -130,7 +130,7 @@ class QuizzCommand {
                 }
                 else {
                     $nextQuestion = $quizz['questions'][$quizz['indexQuestion']]['question'];
-                    $message->channel->sendMessage("### ⌛ Temps écoulé !\n**Question suivante:**\n{$nextQuestion}");
+                    $message->channel->sendMessage("### ⌛ Temps écoulé !\n**Question suivante [{$nextQuestion['langage']}] :**\n{$nextQuestion}");
                     $quizz['questionStartTime'] = time();
                     self::startTimer($quizzKey, $message);
                 }
