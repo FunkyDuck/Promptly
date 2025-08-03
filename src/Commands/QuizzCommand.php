@@ -83,30 +83,30 @@ class QuizzCommand {
                 if(stripos($userAnswer, $phrase) !== false) $match = true;
             }
 
-            $authorId = $message->author->id;
+        }
+        $authorId = $message->author->id;
 
-            if($match) {
-                $quizz['scores'][$authorId] = ($quizz['scores'][$authorId] ?? 0) + 1;
-                $message->channel->sendMessage("✅ Bonne réponse <@{$message->userId}>");
-                
-                $quizz['indexQuestion']++;
-                
-                if($quizz['indexQuestion'] >= count($quizz['questions'])) {
-                    // Quizz Ended
-                    $scores = $quizz['scores'];
-                    arsort($scores);
-                    $result = "## Fin du quizz !\n**🏁 Classement 🏁**\n";
-                    $result .= self::renderScore($scores);
-                    $message->channel->sendMessage($result);
-                    unset(self::$activeQuizzes[$quizzKey]);
-                }
-                else {
-                    // Next question
-                    $nextQuestion = $quizz['questions'][$quizz['indexQuestion']]['question'];
-                    $message->channel->sendMessage("**Question suivante [{$nextQuestion['langage']}] :**\n{$nextQuestion}");
-                    $quizz['questionStartTime'] = time();
-                    self::startTimer($quizzKey, $message);
-                }
+        if($match) {
+            $quizz['scores'][$authorId] = ($quizz['scores'][$authorId] ?? 0) + 1;
+            $message->channel->sendMessage("✅ Bonne réponse <@{$message->userId}>");
+            
+            $quizz['indexQuestion']++;
+            
+            if($quizz['indexQuestion'] >= count($quizz['questions'])) {
+                // Quizz Ended
+                $scores = $quizz['scores'];
+                arsort($scores);
+                $result = "## Fin du quizz !\n**🏁 Classement 🏁**\n";
+                $result .= self::renderScore($scores);
+                $message->channel->sendMessage($result);
+                unset(self::$activeQuizzes[$quizzKey]);
+            }
+            else {
+                // Next question
+                $nextQuestion = $quizz['questions'][$quizz['indexQuestion']]['question'];
+                $message->channel->sendMessage("**Question suivante [{$nextQuestion['langage']}] :**\n{$nextQuestion}");
+                $quizz['questionStartTime'] = time();
+                self::startTimer($quizzKey, $message);
             }
         }
         return false;
