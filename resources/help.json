@@ -22,6 +22,11 @@
       "details": "Exemple : `!question python`\nLangages supportés : php, javascript, html, python, css, java, c#, sql, git\nNiveau de difficulté aléatoire (easy à hard)."
     },
     {
+      "command": "!quizz",
+      "description": "Lance un quizz multijoueur asynchrone dans le salon.",
+      "details": "Le bot pose une série de questions techniques, les joueurs répondent dans le chat.\n- Pas besoin de s'inscrire : toute personne qui répond peut marquer des points.\n- Tu peux répondre plusieurs fois à chaque question.\n- Le premier à donner la bonne réponse gagne le point.\n- Il y a un temps limite par question (ensuite le bot passe à la suivante).\n- À la fin du quizz, un classement est affiché.\n\nExemple : `!quizz csharp`\n(lance un quizz sur C#)\n**Langages disponibles :** C#, CSS, GIT, HTML, Java, JavaScript, PHP, Python, SQL."
+    },
+    {
       "command": "!hello-world",
       "description": "Affiche un code 'Hello World' dans le langage spécifié ou un random si pas d’argument.",
       "details": "Exemple : `!hello-world python`\n\nLangages disponibles :\n- php\n- python\n- javascript\n- bash\n- c\n- sql\n- csharp\n- java\n- ruby\n- lua\n- rust\n- postgresql\n- assembly\n- brainfuck\n\nSi aucun langage n'est précisé, un langage est choisi au hasard.\n\n⚠️ Certains langages comme `brainfuck` ou `assembly` sont purement pour le fun (ou les fous)."
