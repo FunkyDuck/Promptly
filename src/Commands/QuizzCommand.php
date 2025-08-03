@@ -129,8 +129,8 @@ class QuizzCommand {
                     unset(self::$activeQuizzes[$quizzKey]);
                 }
                 else {
-                    $nextQuestion = $quizz['questions'][$quizz['indexQuestion']]['question'];
-                    $message->channel->sendMessage("### ⌛ Temps écoulé !\n**Question suivante [{$nextQuestion['langage']}] :**\n{$nextQuestion}");
+                    $nextQuestion = $quizz['questions'][$quizz['indexQuestion']];
+                    $message->channel->sendMessage("### ⌛ Temps écoulé !\n**Question suivante [{$nextQuestion['langage']}] :**\n{$nextQuestion['question']}");
                     $quizz['questionStartTime'] = time();
                     self::startTimer($quizzKey, $message);
                 }
