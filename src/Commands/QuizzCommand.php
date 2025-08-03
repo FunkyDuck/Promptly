@@ -88,7 +88,7 @@ class QuizzCommand {
 
         if($match) {
             $quizz['scores'][$authorId] = ($quizz['scores'][$authorId] ?? 0) + 1;
-            $message->channel->sendMessage("✅ Bonne réponse <@{$message->userId}>");
+            $message->channel->sendMessage("✅ Bonne réponse <@{$message->author->id}>");
             
             $quizz['indexQuestion']++;
             
@@ -103,8 +103,8 @@ class QuizzCommand {
             }
             else {
                 // Next question
-                $nextQuestion = $quizz['questions'][$quizz['indexQuestion']]['question'];
-                $message->channel->sendMessage("**Question suivante [{$nextQuestion['langage']}] :**\n{$nextQuestion}");
+                $nextQuestion = $quizz['questions'][$quizz['indexQuestion']];
+                $message->channel->sendMessage("**Question suivante [{$nextQuestion['langage']}] :**\n{$nextQuestion['question']}");
                 $quizz['questionStartTime'] = time();
                 self::startTimer($quizzKey, $message);
             }
