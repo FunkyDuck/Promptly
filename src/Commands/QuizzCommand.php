@@ -57,7 +57,7 @@ class QuizzCommand {
         $quizz['scores'] = [];
         $quizz['questionStartTime'] = time();
         
-        $message->channel->sendMessage("# C'est parti pour le Quizz 🧠\n**Première question [{$quizz[0]['langage']}] ::**\n{$questions[0]['question']}");
+        $message->channel->sendMessage("# C'est parti pour le Quizz 🧠\n**Première question [{$questions[0]['langage']}] ::**\n{$questions[0]['question']}");
         self::startTimer($quizzKey, $message);
     }
     
@@ -147,7 +147,7 @@ class QuizzCommand {
         $result = "";
         $i = 1;
         foreach ($scores as $userId => $score) {
-            $result .= "`#{$i} <@{$userId}> : {$score} pts`\n";
+            $result .= "`#{$i}` <@{$userId}> : _{$score} pts_\n";
             $i++;
         }
         return $result;
