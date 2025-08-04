@@ -78,9 +78,28 @@ class QuizzCommand {
         }
 
         // Fuzzy test on accepted phrases
-        if(!empty($currentQuestion['accepted_phrases'])) {
+        if(!$match && !empty($currentQuestion['accepted_phrases'])) {
             foreach ($currentQuestion['accepted_phrases'] as $phrase) {
-                if(stripos($userAnswer, $phrase) !== false) $match = true;
+                if(stripos($userAnswer, $phrase) !== false){
+                     $match = true;
+                     break;
+                }
+                // Normalization and count same words with 60% match for true response
+                if(!$match) {
+                    $cleanAnswer = strtolower(preg_replace('/[^\w\s]/', '', $userAnswer));
+                    $cleanPhrase = strtolower(preg_replace('/[^\w\s]/', '', $phrase));
+                
+                    $answerWords = explode(' ', $cleanAnswer);
+                    $phraseWords = explode(' ', $cleanPhrase);
+
+                    $commonWords = array_intersect($answerWords, $phraseWords);
+                    $ratio = count($commonWords) / max(count($phraseWords), 1);
+
+                    if($ratio >= 0.6) {
+                        $match = true;
+                        break;
+                    }
+                }
             }
 
         }
