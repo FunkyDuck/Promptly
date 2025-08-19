@@ -2,8 +2,8 @@
 
 namespace Querychan\Models;
 
-use Querychan\ORM\Model;
-use Querychan\ORM\SchemaBuilder;
+use FunkyDuck\Querychan\ORM\Model;
+use FunkyDuck\Querychan\ORM\SchemaBuilder;
 
 class Players extends Model {
     protected static string $table = 'players';

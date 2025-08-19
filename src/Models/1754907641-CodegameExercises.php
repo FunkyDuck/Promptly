@@ -2,8 +2,8 @@
 
 namespace Querychan\Models;
 
-use Querychan\ORM\Model;
-use Querychan\ORM\SchemaBuilder;
+use FunkyDuck\Querychan\ORM\Model;
+use FunkyDuck\Querychan\ORM\SchemaBuilder;
 
 class CodegameExercises extends Model {
     protected static string $table = 'codegame_exercises';
