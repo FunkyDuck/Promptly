@@ -10,7 +10,6 @@ composer.phar
 ### Logs et caches ###
 *.log
 *.cache
-*.lock
 
 ### Systèmes d’exploitation ###
 .DS_Store
