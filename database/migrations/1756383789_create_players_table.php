@@ -1,16 +1,17 @@
 <?php
 
-namespace Querychan\Models;
-
-use FunkyDuck\Querychan\ORM\Model;
+use FunkyDuck\Querychan\ORM\Database;
 use FunkyDuck\Querychan\ORM\SchemaBuilder;
 
-class Players extends Model {
-    protected static string $table = 'players';
-
-    protected static function schema(): SchemaBuilder {
+return new class {
+    /**
+     * Run migration
+     */
+    public function up(): void {
         $schema = new SchemaBuilder();
+
         $schema->id();
+        $schema->varchar('name', 128)->notNull();
         $schema->bigint('discord_id');
         $schema->bigint('server_id');
         $schema->int('level')->default(1);
@@ -20,8 +21,18 @@ class Players extends Model {
         $schema->int('streak_days')->default(0);
         $schema->int('best_streak')->default(0);
         $schema->int('total_points')->default(0);
-        $schema->json('badges')->nullable();
+        $schema->json('badges');
         $schema->timestamps();
-        return $schema;
+
+        // Create table
+        $sql = $schema->toSql('players');
+        Database::get()->exec($sql);
     }
-}
+
+    /**
+     * Reverse migration
+     */
+    public function down(): void {
+        Database::dropTableIfExists('players');
+    }
+};

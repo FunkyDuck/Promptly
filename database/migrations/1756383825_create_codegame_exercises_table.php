@@ -1,15 +1,15 @@
 <?php
 
-namespace Querychan\Models;
-
-use FunkyDuck\Querychan\ORM\Model;
+use FunkyDuck\Querychan\ORM\Database;
 use FunkyDuck\Querychan\ORM\SchemaBuilder;
 
-class CodegameExercises extends Model {
-    protected static string $table = 'codegame_exercises';
-
-    protected static function schema(): SchemaBuilder {
+return new class {
+    /**
+     * Run migration
+     */
+    public function up(): void {
         $schema = new SchemaBuilder();
+
         $schema->id();
         $schema->int('position_exercise');
         $schema->varchar('title', 255)->notNull();
@@ -19,8 +19,18 @@ class CodegameExercises extends Model {
         $schema->varchar('language', 16)->notNull();
         $schema->text('starter_code')->notNull();
         $schema->text('solution_code')->notNull();
-        $schema->json('test')->nullable();
+        $schema->json('test');
         $schema->timestamps();
-        return $schema;
+
+        // Create table
+        $sql = $schema->toSql('codegame_exercises');
+        Database::get()->exec($sql);
     }
-}
+
+    /**
+     * Reverse migration
+     */
+    public function down(): void {
+        Database::dropTableIfExists('codegame_exercises');
+    }
+};

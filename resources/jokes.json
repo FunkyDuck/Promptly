@@ -1,80 +1,106 @@
 [
     {
-        "joke": "Une requête TCP entre dans un bar et dit :\n- Je veux une bière\n- Vous voulez une bière ?\n- Oui, je veux une bière\n- Très bien"
+        "joke": "Une requête TCP entre dans un bar et dit :\n- Je veux une bière\n- Vous voulez une bière ?\n- Oui, je veux une bière\n- Très bien",
+        "category": "réseau"
     },
     {
-        "joke": "Comment reconnaître un programmeur avec un verre vide ?\n- Le pessimiste dit que le verre est à moitié vide\n- L'optimiste dit que le verre est à moitié plein\n- Le programmeur dit que le verre est deux fois trop grand"
+        "joke": "Comment reconnaître un programmeur avec un verre vide ?\n- Le pessimiste dit que le verre est à moitié vide\n- L'optimiste dit que le verre est à moitié plein\n- Le programmeur dit que le verre est deux fois trop grand",
+        "category": "général"
     },
     {
-        "joke": "Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?\nVous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?\nVous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?\nVous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?\nVous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?\nVous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?\nVous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?"
+        "joke": "Vous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?\nVous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?\nVous connaissez la blague du mec qui a oublié d'augmenter la variable dans sa boucle while ?",
+        "category": "dev"
     },
     {
-        "joke": "Il y a 10 types de gens dans le monde.\nCeux qui parlent binaire, et les autres."
+        "joke": "Il y a 10 types de gens dans le monde.\nCeux qui parlent binaire, et les autres.",
+        "category": "général"
     },
     {
-        "joke": "Toc Toc\nQui est là ?\n*Très longue pause*\nC'est Internet Explorer"
+        "joke": "Toc Toc\nQui est là ?\n*Très longue pause*\nC'est Internet Explorer",
+        "category": "général"
     },
     {
-        "joke": "Il y a deux sortes de gens : ceux qui comprennent la notion de récursivité et ceux qui ne comprennent pas qu’il y a deux sortes de gens : ceux qui comprennent la notion de récursivité et ceux qui ne comprennent pas qu’il y a deux sortes de gens : ceux qui comprennent la notion de récursivité et ceux qui ne comprennent pas qu’il y a deux sortes de gens..."
+        "joke": "Il y a deux sortes de gens : ceux qui comprennent la notion de récursivité et ceux qui ne comprennent pas qu’il y a deux sortes de gens...",
+        "category": "dev"
     },
     {
-        "joke": "Combien de développeurs faut-t-il pour remplacer une ampoule grillée ?\nAucun, c'est un problème Hardware."
+        "joke": "Combien de développeurs faut-t-il pour remplacer une ampoule grillée ?\nAucun, c'est un problème Hardware.",
+        "category": "hardware"
     },
     {
-        "joke": "C'est l'histoire d'un administrateur qui configure ses variables d'environnement, et là......... PATH le chemin !"
+        "joke": "C'est l'histoire d'un administrateur qui configure ses variables d'environnement, et là......... PATH le chemin !",
+        "category": "général"
     },
     {
-        "joke": "J'ai une blague sur UDP, mais je suis pas sûr que tu la captes."
+        "joke": "J'ai une blague sur UDP, mais je suis pas sûr que tu la captes.",
+        "category": "réseau"
     },
     {
-        "joke": "Deux paquets UDP discutent :\n    Ah bon ?\n    Il paraît que je peux arriver avant toi\nest L'ordre pour critique UDP. faire bonne blague une"
+        "joke": "Deux paquets UDP discutent :\n    Ah bon ?\n    Il paraît que je peux arriver avant toi\nest L'ordre pour critique UDP. faire bonne blague une",
+        "category": "réseau"
     },
     {
-        "joke": "Je te raconterai cette blague TCP jusqu'à ce que tu la captes.\nJe te raconterai cette blague TCP jusqu'à ce que tu la captes.\nJe te raconterai cette blague TCP jusqu'à ce que tu la captes.\nJe te raconterai cette blague TCP jusqu'à ce que tu la captes.\nJe te raconterai cette blague TCP jusqu'à ce que tu la captes.\nJe te raconterai cette blague TCP jusqu'à ce que tu la captes.\nJe te raconterai cette blague TCP jusqu'à ce que tu la captes."
+        "joke": "Je te raconterai cette blague TCP jusqu'à ce que tu la captes.\nJe te raconterai cette blague TCP jusqu'à ce que tu la captes.\nJe te raconterai cette blague TCP jusqu'à ce que tu la captes.",
+        "category": "réseau"
     },
     {
-        "joke": "Un groupe de paquets TCP rentre dans un bar, le barman dit : « Attendez deux secondes, je dois fermer cette fenêtre »."
+        "joke": "Un groupe de paquets TCP rentre dans un bar, le barman dit : « Attendez deux secondes, je dois fermer cette fenêtre ».",
+        "category": "réseau"
     },
     {
-        "joke": "C'est une requête SQL qui entre dans un bar, et le serveur répond : « Il n'y a plus de tables ! »."
+        "joke": "C'est une requête SQL qui entre dans un bar, et le serveur répond : « Il n'y a plus de tables ! ».",
+        "category": "sql"
     },
     {
-        "joke": "Refusée au bar, la requête SQL veut aller en boîte et le videur lui dit : « Non, dehors ! C'est select ici. »"
+        "joke": "Refusée au bar, la requête SQL veut aller en boîte et le videur lui dit : « Non, dehors ! C'est select ici. »",
+        "category": "sql"
     },
     {
-        "joke": "Je voulais te raconter une blague sur les erreurs 404, mais je ne la retrouve plus."
+        "joke": "Je voulais te raconter une blague sur les erreurs 404, mais je ne la retrouve plus.",
+        "category": "réseau"
     },
     {
-        "joke": "Pourquoi on me dit de composer le 303 quand j'essaie d'accéder aux x-files sur ce site ? "
+        "joke": "Pourquoi on me dit de composer le 303 quand j'essaie d'accéder aux x-files sur ce site ? ",
+        "category": "réseau"
     },
     {
-        "joke": "Désolé, les blagues IPv4 sont épuisées."
+        "joke": "Désolé, les blagues IPv4 sont épuisées.",
+        "category": "réseau"
     },
     {
-        "joke": "Désolé, les blagues sur les certificats sont expirées."
+        "joke": "Désolé, les blagues sur les certificats sont expirées.",
+        "category": "réseau"
     },
     {
-        "joke": "Les meilleurs blagues sont avec DNSSEC, car on peut vérifier qu'elles ont été racontées correctement."
+        "joke": "Les meilleurs blagues sont avec DNSSEC, car on peut vérifier qu'elles ont été racontées correctement.",
+        "category": "réseau"
     },
     {
-        "joke": "- Savez-vous qui est Bob Marlex ?\n- Euh…\n- Bah, c'est un chanteur de regex. "
+        "joke": "- Savez-vous qui est Bob Marlex ?\n- Euh…\n- Bah, c'est un chanteur de regex. ",
+        "category": "dev"
     },
     {
-        "joke": "Pourquoi les claviers azerty sont ils plus chers que les claviers qwerty ?\nCar un clavier azerty en vaut 2."
+        "joke": "Pourquoi les claviers azerty sont ils plus chers que les claviers qwerty ?\nCar un clavier azerty en vaut 2.",
+        "category": "hardware"
     },
     {
-        "joke": "Il y a deux problèmes difficiles en informatique :\n• le nommage des variables,\n• l'invalidation d'un cache,\n• les erreurs de compteur dans les itérations."
+        "joke": "Il y a deux problèmes difficiles en informatique :\n• le nommage des variables,\n• l'invalidation d'un cache,\n• les erreurs de compteur dans les itérations.",
+        "category": "dev"
     },
     {
-        "joke": "C'est un testeur qui rentre dans un bar, il commande une bière, 10 bières, -1 bière, 1.5 bières, il sort du bar, commande 1 bière, retourne dans le bar, commande 1024 bières.\nTout va bien.\nPuis un client rentre dans le bar et demande où sont les toilettes, le bar explose. "
+        "joke": "C'est un testeur qui rentre dans un bar, il commande une bière, 10 bières, -1 bière, 1.5 bières... Tout va bien.\nPuis un client rentre dans le bar et demande où sont les toilettes, le bar explose. ",
+        "category": "dev"
     },
     {
-        "joke": "Dans un réseau local sous unix, deux ordinateurs discutent:.\nLe premier dit à l'autre:\n- Dis, tu savais que \"Bill Gates III\" en valeur ascii, ça faisait 666, le nombre du Malin?!\nL'autre:\n- Ouais, ça m'étonne pas! J'ai même entendu dire que si tu lisais le cd de Windows 98 à l'envers, tu entendais un message satanique!\n- Oh ben c'est rien ça: si tu le lis dans le bon sens,ça installe Windows 98 !"
+        "joke": "Dans un réseau local sous unix, deux ordinateurs discutent:.\n- Dis, tu savais que \"Bill Gates III\" en valeur ascii, ça faisait 666... si tu le lis dans le bon sens, ça installe Windows 98 !",
+        "category": "général"
     },
     {
-        "joke": "Tu sais que tu es un développeur quand ça te gène pas d'avoir un String dans l'Array"
+        "joke": "Tu sais que tu es un développeur quand ça te gène pas d'avoir un String dans l'Array",
+        "category": "dev"
     },
     {
-        "joke": "```SQL\nSELECT odeur FROM age;```"
+        "joke": "```SQL\nSELECT odeur FROM age;```",
+        "category": "sql"
     }
 ]
