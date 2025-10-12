@@ -2,10 +2,12 @@
 FROM php:8.4-cli-alpine
 
 # STEP 2 : Install php & system dependance
-RUN apk add --no-cache --virtual .build-deps $PHPIZE_DEPS mysql-dev && \
-    docker-php-ext-install pdo pdo_mysql sockets && \
-    apk del .build-deps && \
-    apk add --no-cache git zip unzip
+RUN apk add --no-cache \
+        php84-pdo_mysql \
+        php84-sockets \
+        git \
+        zip \
+        unzip
 
 # STEP 3 : Install  Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
