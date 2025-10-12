@@ -2,7 +2,7 @@
 FROM php:8.4-cli-alpine
 
 # STEP 2 : Install php & system dependance
-RUN apk add --no-cache --virtual .build-deps $PHPIZE_DEPS mariadb-dev && \
+RUN apk add --no-cache --virtual .build-deps $PHPIZE_DEPS mysql-dev && \
     docker-php-ext-install pdo pdo_mysql sockets && \
     apk del .build-deps && \
     apk add --no-cache git zip unzip
